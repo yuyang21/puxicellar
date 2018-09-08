@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>服务售后</title>
+    <link href="../style/service_after_sale.css" rel="stylesheet" type="text/css"/>
+    <link href="../style/common.css" rel="stylesheet" type="text/css"/>
+    <script src="../config/rem.js" type=""></script>
+    <script src="../plugins/jquery-3.3.1.min.js" type=""></script>
+  </head>
+  <body>
+    <div id="service_after_sale">
+      <div class="header"></div>
+      <ul class="tab_list">
+        <li class="active">服务流程</li>
+        <li>品质保障</li>
+        <li>无忧售后</li>
+      </ul>
+      <!-- 服务流程 -->
+      <ul class="service_flow content">
+        <p class="title"><span>服务</span>流程</p>
+        <p class="text">完善的服务 优良的体验</p>
+        <li>
+          <p><img src="../images/afterSale/service_01.png" alt="图片"></p>
+          <div class="desr">初步需求沟通</div>
+        </li>
+        <li>
+          <p><img src="../images/afterSale/service_02.png" alt="图片"></p>
+          <div class="desr">实地勘察评估，针对酒窖相应介绍及推荐</div>
+        </li>
+        <li>
+          <p><img src="../images/afterSale/service_03.png" alt="图片"></p>
+          <div class="desr">提交方案</div>
+        </li>
+        <li>
+          <p><img src="../images/afterSale/service_04.png" alt="图片"></p>
+          <div class="desr">精确方案并签约</div>
+        </li>
+        <li>
+          <p><img src="../images/afterSale/service_05.png" alt="图片"></p>
+          <div class="desr">生产制作</div>
+        </li>
+        <li>
+          <p><img src="../images/afterSale/service_06.png" alt="图片"></p>
+          <div class="desr">上门施工安装</div>
+        </li>
+        <li>
+          <p><img src="../images/afterSale/service_07.png" alt="图片"></p>
+          <div class="desr">项目验收交接</div>
+        </li>
+        <li>
+          <p><img src="../images/afterSale/service_08.png" alt="图片"></p>
+          <div class="desr">终身维护的服务承若</div>
+        </li>
+      </ul>
+      <!-- 品质保障 -->
+      <div class="quality_assurance content">
+          品质保障
+      </div>
+    </div>
+  </body>
+  <script>
+    var $tab_list = $(".tab_list li");
+    var queryType = location.href.split('?')[1];
+    if (queryType) {
+      var indexTab = queryType.split('=')[1];
+    } else {
+      var indexTab = 0
+    }
+    $tab_list.siblings().removeClass('active');
+    $tab_list.eq(indexTab).addClass('active');
+    $('.content').hide();
+    $('.content').eq(indexTab).show();
+    $tab_list.click(function(){
+      var index = $tab_list.index(this);
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+      $('.content').hide();
+      $('.content').eq(index).show();
+    })
+  </script>
+</html>

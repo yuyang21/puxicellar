@@ -1,0 +1,131 @@
+#service_after_sale {
+  padding-top: .57rem;
+  margin-bottom: .39rem;
+}
+#service_after_sale .content {
+  display: none;
+}
+.header {
+  width: 100%;
+  height: 2.61rem;
+  background: url('../images/afterSale/afterSale.jpg') no-repeat center center;
+  background-size: 100%;
+}
+.tab_list {
+  padding: 0 .1rem;
+  overflow: hidden;
+  margin: .39rem auto .3rem;
+}
+.tab_list li {
+  width: 1.74rem;
+  height: .46rem;
+  line-height: .46rem;
+  color: #fff;
+  font-size: .15rem;
+  text-align: center;
+  background: #5A5A5A;
+  margin-bottom: .09rem;
+  font-weight: 100;
+}
+.tab_list li.active {
+  background: #D70C19;
+}
+.tab_list li:nth-child(odd) {
+  float: left;
+}
+.tab_list li:nth-child(even) {
+  float: right;
+}
+/* 服务流程 */
+.service_flow {
+  padding: .24rem .3rem .04rem;
+  text-align: center;
+  background: #eee;
+  margin: 0 .1rem;
+  overflow: hidden;
+}
+.service_flow .title {
+  font-size: .21rem;
+  color: #333;
+  height: .21rem;
+  line-height: .21rem;
+}
+.service_flow .text {
+  font-size: .15rem;
+  color: #666;
+  margin: .1rem auto .29rem;
+  width: 1.58rem;
+  height: .16rem;
+  line-height: .16rem;
+}
+.service_flow .title span {
+  color: #D70C19;
+}
+.service_flow li {
+  font-size: .14rem;
+  color: #333;
+  width: 50%;
+}
+.service_flow li p {
+  width: 1.08rem;
+  height: 1.08rem;
+  line-height: 1.08rem;
+  background: #666;
+  border-radius: .03rem;
+}
+.service_flow li p img {
+  vertical-align: middle;
+}
+.service_flow li:nth-child(3) p img {
+  width: .42rem;
+  height: .4rem;
+}
+.service_flow li:nth-child(4) p img {
+  width: .41rem;
+  height: .48rem;
+}
+.service_flow li:nth-child(5) p img {
+  width: .35rem;
+  height: .43rem;
+}
+.service_flow li:nth-child(6) p img {
+  width: .42rem;
+  height: .45rem;
+}
+.service_flow li:nth-child(7) p img {
+  width: .65rem;
+  height: .61rem;
+}
+.service_flow li:nth-child(8) p img {
+  width: .62rem;
+  height: .44rem;
+}
+.service_flow li:nth-child(9) p img {
+  width: .48rem;
+  height: .49rem;
+}
+.service_flow li:nth-child(10) p img {
+  width: .42rem;
+  height: .49rem;
+}
+.service_flow li .desr {
+  clear: both;
+  text-align: center;
+  height: .34rem;
+  color: #333;
+  padding: .18rem 0 .2rem;
+}
+.service_flow li:nth-child(odd) .desr {
+  width: 1.08rem;
+}
+.service_flow li:nth-child(even) .desr {
+  text-align: center;
+  width: 1.38rem;
+  margin-left: .26rem;
+ }
+.service_flow li:nth-child(odd), .service_flow li:nth-child(odd) p {
+  float: left;
+}
+.service_flow li:nth-child(even), .service_flow li:nth-child(even) p {
+  float: right;
+}
