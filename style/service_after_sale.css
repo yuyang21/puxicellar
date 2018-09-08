@@ -1,6 +1,6 @@
 #service_after_sale {
   padding-top: .57rem;
-  margin-bottom: .39rem;
+  margin-bottom: .31rem;
 }
 #service_after_sale .content {
   display: none;
@@ -36,30 +36,32 @@
 .tab_list li:nth-child(even) {
   float: right;
 }
-/* 服务流程 */
-.service_flow {
-  padding: .24rem .3rem .04rem;
-  text-align: center;
-  background: #eee;
+.content {
   margin: 0 .1rem;
-  overflow: hidden;
+  text-align: center;
 }
-.service_flow .title {
+.content .title {
   font-size: .21rem;
   color: #333;
   height: .21rem;
   line-height: .21rem;
 }
-.service_flow .text {
+.content .text {
   font-size: .15rem;
   color: #666;
   margin: .1rem auto .29rem;
-  width: 1.58rem;
   height: .16rem;
   line-height: .16rem;
 }
-.service_flow .title span {
+.content .title span {
   color: #D70C19;
+}
+/* 服务流程 */
+.service_flow {
+  padding: .24rem .3rem .04rem;
+  text-align: center;
+  background: #eee;
+  overflow: hidden;
 }
 .service_flow li {
   font-size: .14rem;
@@ -128,4 +130,17 @@
 }
 .service_flow li:nth-child(even), .service_flow li:nth-child(even) p {
   float: right;
+}
+/* 无忧售后 */
+.free_after_sale .text {
+  margin-bottom: .21rem;
+}
+.free_after_sale .promise {
+  font-size: .15rem;
+  color: #666;
+  text-align: justify;
+  line-height: 1.7;
+}
+.free_after_sale .promise p {
+  margin-bottom: .08rem;
 }

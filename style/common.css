@@ -179,3 +179,87 @@ li{
 .navBar ul li:last-child{
   border: none;
 }
+
+.footer {
+    color: #fff;
+}
+.footer .section1 {
+    padding: .41rem 0 .4rem .1rem;
+    background: #000;
+    height: 2.92rem;
+}
+.footer .section1 .city {
+    font-size: .16rem;
+    height: .17rem;
+    line-height: .17rem;
+}
+.footer .section1 .city span {
+    color: #999;
+    margin-left: .15rem;
+}
+.footer .section1 .address {
+    color: #e0e0e0;
+    font-size: .14rem;
+    margin: .15rem 0 .31rem;
+    height: .58rem;
+}
+.footer .section1 .address span {
+    color: #999;
+    font-size: .14rem;
+}
+.footer .section2 {
+    background: #D70C19;
+    padding: .4rem 0 .41rem;
+    height: 2.05rem;
+    text-align: center;
+}
+.footer .section2 .hot_tel_text {
+    font-size: .15rem;
+    height: .15rem;
+    line-height: .15rem;
+}
+.footer .section2 .hot_tel_num {
+    font-size: .26rem;
+    height: .21rem;
+    line-height: .21rem;
+    margin: .2rem auto;
+}
+.footer .section2 .tip {
+    font-size: .13rem;
+    height: .13rem;
+    line-height: .13rem;
+}
+.footer .section2 .title {
+    font-size: .21rem;
+    height: .21rem;
+    line-height: .21rem;
+    margin: .2rem auto .41rem;
+}
+.footer .section3 {
+    height: .46rem;
+    line-height: .46rem;
+    background: #CB0F1B;
+    text-align: center;
+}
+.footer .section3 li {
+    display: inline-block;
+    font-size: .12rem;
+}
+.footer .section3 li.right {
+    width: 1.68rem;
+    padding-left: .37rem;
+    background: url('../images/footer/tel.png') no-repeat 0.1rem 0.1rem;
+    background-size: 14.5%;
+}
+.footer .section3 .left {
+    width: 2.07rem;
+    background: #000;
+}
+.footer .section3 .left li {
+    width: 33.33%;
+    float: left;
+}
+.footer .section3 .left li:nth-child(2) {
+    border-left: 1px solid #666;
+    border-right: 1px solid #666;
+}
