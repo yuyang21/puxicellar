@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>案例-高端酒窖设计定制公司,上海_山西_山东_北京酒窖设计,优秀高端酒窖设计,酒窖定制,地下室酒窖，专业酒窖、酒柜设计,-【首选葡玺酒窖】</title>
+    <link href="../style/case.css" rel="stylesheet" type="text/css"/>
+    <link href="../style/common.css" rel="stylesheet" type="text/css"/>
+    <script src="../config/rem.js" type=""></script>
+    <script src="../plugins/jquery-3.3.1.min.js" type=""></script>
+  </head>
+  <body>
+    <div id="case">
+      <div class="header"></div>
+      <ul class="tab_list">
+        <li class="active">酒窖案例</li>
+        <li>雪茄窖案例</li>
+        <li>实木酒柜案例</li>
+        <li>不锈钢酒柜</li>
+      </ul>
+      <ul class="list_box">
+        <li>
+          <img src="../images/case/success_case_img.png" alt="图片" width="100%">
+          <div class="desr">
+            <p class="time">2016-09-06</p>
+            <p class="name">北京香格里拉酒店</p>
+            <div class="bottom">
+              <div class="left">
+                  <p class="area">面积：500平</p>
+                  <p class="style">风格：现代简约</p>
+              </div>
+              <div class="right">
+                查看详情
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list_box">
+        <li>
+          <img src="../images/case/success_case_img.png" alt="图片" width="100%">
+          <div class="desr">
+            <p class="time">2016-09-06</p>
+            <p class="name">北京香格里拉酒店</p>
+            <div class="bottom">
+              <div class="left">
+                  <p class="area">面积：500平</p>
+                  <p class="style">风格：现代简约</p>
+              </div>
+              <div class="right">
+                查看详情
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list_box">
+        <li>
+          <img src="../images/case/success_case_img.png" alt="图片" width="100%">
+          <div class="desr">
+            <p class="time">2016-09-06</p>
+            <p class="name">北京香格里拉酒店</p>
+            <div class="bottom">
+              <div class="left">
+                  <p class="area">面积：500平</p>
+                  <p class="style">风格：现代简约</p>
+              </div>
+              <div class="right">
+                查看详情
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list_box">
+        <li>
+          <img src="../images/case/success_case_img.png" alt="图片" width="100%">
+          <div class="desr">
+            <p class="time">2016-09-06</p>
+            <p class="name">北京香格里拉酒店</p>
+            <div class="bottom">
+              <div class="left">
+                  <p class="area">面积：500平</p>
+                  <p class="style">风格：现代简约</p>
+              </div>
+              <div class="right">
+                查看详情
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list_box">
+        <li>
+          <img src="../images/case/success_case_img.png" alt="图片" width="100%">
+          <div class="desr">
+            <p class="time">2016-09-06</p>
+            <p class="name">北京香格里拉酒店</p>
+            <div class="bottom">
+              <div class="left">
+                  <p class="area">面积：500平</p>
+                  <p class="style">风格：现代简约</p>
+              </div>
+              <div class="right">
+                查看详情
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="list_box">
+        <li>
+          <img src="../images/case/success_case_img.png" alt="图片" width="100%">
+          <div class="desr">
+            <p class="time">2016-09-06</p>
+            <p class="name">北京香格里拉酒店</p>
+            <div class="bottom">
+              <div class="left">
+                  <p class="area">面积：500平</p>
+                  <p class="style">风格：现代简约</p>
+              </div>
+              <div class="right">
+                查看详情
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="more">
+        <img src="../images/case/more_case.png">
+        <span>更多精彩案例</span>  
+      </div>
+    </div>
+  </body>
+  <script>
+    var $tab_list = $(".tab_list li");
+    var queryType = location.href.split('?')[1];
+    if (queryType) {
+      var indexTab = queryType.split('=')[1];
+      $tab_list.siblings().removeClass('active');
+      $tab_list.eq(indexTab).addClass('active');
+    }
+    $tab_list.click(function(){
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+    })
+  </script>
+</html>
