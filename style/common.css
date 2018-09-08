@@ -135,3 +135,47 @@ p, ul{
 li{
     list-style: none;
 }
+
+/*导航条*/
+.navBar{
+  height: .57rem;
+  background: #191919;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+}
+.navBar .logo{
+    width: .79rem;
+    height: .26rem;
+    margin: .15rem .1rem;
+    float: left;
+    display: block;
+}
+.navBar .nav{
+  width: .22rem;
+  height: .15rem;
+  float: right;
+  margin: .2rem .25rem;
+  display: block;
+  transition: .3s all ease;
+}
+.navBar ul{
+  margin-top: .57rem;
+  clear: both;
+  transition: .3s all linear;
+  overflow: hidden;
+  height: 0;
+}
+.navBar ul li{
+  background: #191919;
+  line-height: .5rem;
+  height: .5rem;
+  font-size: .16rem;
+  color: #FFFFFF;
+  text-align: center;
+  border-bottom: .01rem solid #353535;
+}
+.navBar ul li:last-child{
+  border: none;
+}
