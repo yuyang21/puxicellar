@@ -13,14 +13,338 @@
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="Cache" content="no-cache">
     <title>葡玺酒窖</title>
+    <script src="./config/rem.js"></script>
+    <script src="./plugins/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="./style/common.css">
+    <link rel="stylesheet" href="./plugins/swiper-4.3.5.min.css">
   </head>
+  <style type="text/css">
+    /*导航条*/
+    .navBar{
+      height: .57rem;
+      background: #191919;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 50;
+    }
+    .navBar .logo{
+        width: .79rem;
+        height: .26rem;
+        margin: .15rem .1rem;
+        float: left;
+        display: block;
+    }
+    .navBar .nav{
+      width: .22rem;
+      height: .15rem;
+      float: right;
+      margin: .2rem .25rem;
+      display: block;
+      transition: .5s all ease;
+    }
+    .navBar ul{
+      margin-top: .57rem;
+      clear: both;
+      transition: .5s all linear;
+      overflow: hidden;
+      height: 0;
+    }
+    .navBar ul li{
+      background: #191919;
+      line-height: .5rem;
+      height: .5rem;
+      font-size: .16rem;
+      color: #FFFFFF;
+      text-align: center;
+      border-bottom: .01rem solid #353535;
+    }
+    .navBar ul li:last-child{
+      border: none;
+    }
+    .swiper-container {
+      width: 100%;
+      height: 4.17rem;
+    }  
+    .swiper-container .swiper-slide{
+      position: relative;
+      color: #fff;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+      bottom: .2rem;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
+      width: .12rem;
+      height: .12rem;
+      background: #fff;
+      margin: 0 .06rem;
+    }
+    .swiper-container .swiper-slide div{
+      position: relative;
+      z-index: 2;
+      padding-top: 1.4rem;
+      text-align: center;
+    }
+    .swiper-container .swiper-slide div p:first-child{
+      color: #F5F1F1;
+      font-size: .21rem;
+    }
+    .swiper-container .swiper-slide div p:nth-child(2){
+      color: #F5F1F1;
+      font-size: .15rem;
+      margin-top: .22rem;
+      margin-bottom: .25rem;
+    }
+    .swiper-container .swiper-slide div p:last-child{
+      color: #FFFFFF;
+      font-size: .09rem;
+      width: .92rem;
+      height: .2rem;
+      line-height: .2rem;
+      margin: 0 auto;
+      border: 1px solid #fff;
+      border-radius: .1rem;
+    }
+    .swiper-container .swiper-slide img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+    }
+    .home{
+      padding-top: .57rem;
+    }
+    .custom ul{
+      clear: both;
+      padding: 0 .09rem;
+    }
+    .custom ul li{
+      width: 50%;
+      float: left;
+      padding: .1rem .4rem;
+      text-align: center;
+    }
+    .border-right{
+      border-right: .01rem solid #EEEEEE;
+    }
+    .border-bottom{
+      border-bottom: .01rem solid #EEEEEE;
+    }
+    .custom ul li img{
+      width: .98rem;
+    }
+    .custom .title{
+      width: 1.92rem;
+      padding: .4rem 0 .3rem;
+      margin: 0 auto;
+      display: block;
+    }
+    .case .title{
+      width: 2.37rem;
+      padding: .4rem 0 .3rem;
+      margin: 0 auto;
+      display: block;
+    }
+    .case ul{
+      padding: 0 .08rem;
+      overflow: hidden;
+    }
+    .case ul li:nth-child(odd){
+      float: left;
+      width: 1.77rem;
+      text-align: center;
+      margin-bottom: .2rem;
+    }
+    .case ul li:nth-child(even){
+      float: right;
+      width: 1.77rem;
+      text-align: center;
+      margin-bottom: .2rem;
+    }
+    .case ul li p{
+      color: #333333;
+      font-size: .13rem;
+      margin-top: .14rem;
+    }
+    .more_btn{
+      border: .015rem solid #666666;
+      background: none;
+      width: .91rem;
+      height: .35rem;
+      line-height: .33rem;
+      color: #333333;
+      font-size: .14rem;
+      margin: .4rem auto;
+      display: block;
+    }
+    .block_width{
+      display: block;
+      width: 100%
+    }
+  </style>
+  <script>
+    $(function(){
+      var showNav = false
+      $('#guide').click(function(){
+        showNav = !showNav
+        if(showNav){
+          $('#guide').css({transform: 'rotate(-90deg)'});
+          $('.navBar ul').stop().animate({height: '3.56rem'})
+        } else {
+          $('#guide').css({transform: 'rotate(0deg)'});
+          $('.navBar ul').stop().animate({height: '0'})
+        }
+      }) 
+    })
+  </script>
   <body>
-    <div id="app">
-      葡玺酒窖
-    	<router-view></router-view>
+    <div class="navBar">
+      <div style="clear: both;">
+        <img class="logo" src="./images/nav/icon.png" alt="" />
+        <img class="nav" id="guide" src="./images/nav/nav_icon.png" alt="">
+      </div>
+      <ul>
+        <li>首页</li>
+        <li>我们</li>
+        <li>定制</li>
+        <li>案例</li>
+        <li>设备</li>
+        <li>服务</li>
+        <li>新闻</li>
+      </ul>
     </div>
+    <div class="home">
+      <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/home/banner.png" alt="">
+                  <div>
+                    <p>专注各类酒窖设计与定制</p>
+                    <p>行业内领先的窖藏全案定制一站式服务商</p>
+                    <p>OUR CASE</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/home/banner.png" alt="">
+                  <div>
+                    <p>专注各类酒窖设计与定制</p>
+                    <p>行业内领先的窖藏全案定制一站式服务商</p>
+                    <p>OUR CASE</p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/home/banner.png" alt="">
+                  <div>
+                    <p>专注各类酒窖设计与定制</p>
+                    <p>行业内领先的窖藏全案定制一站式服务商</p>
+                    <p>OUR CASE</p>
+                  </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="custom">
+          <img src="./images/home/advanced_title.png" alt="" class="title">
+          <ul>
+            <li class="border-bottom border-right">
+              <img src="./images/home/advanced_red_1.png" alt="">
+              <p>酒窖定制</p>
+            </li>
+            <li class="border-bottom">
+              <img src="./images/home/advanced_2.png" alt="">
+              <p>酒柜定制</p>
+            </li>
+            <li class="border-right">
+              <img src="./images/home/advanced_3.png" alt="">
+              <p>雪茄窖定制</p>
+            </li>
+            <li>
+              <img src="./images/home/advanced_4.png" alt="">
+              <p>雪茄柜定制</p>
+            </li>
+          </ul>
+        </div>
+        <div class="case">
+          <img src="./images/home/customer_title.png" alt="" class="title">
+          <ul>
+            <li>
+              <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
+              <p>香山私人会所酒窖设计制作</p>
+            </li>
+            <li>
+              <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
+              <p>香山私人会所酒窖设计制作</p>
+            </li>
+            <li>
+              <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
+              <p>香山私人会所酒窖设计制作</p>
+            </li>
+            <li>
+              <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
+              <p>香山私人会所酒窖设计制作</p>
+            </li>
+            <li>
+              <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
+              <p>香山私人会所酒窖设计制作</p>
+            </li>
+            <li>
+              <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
+              <p>香山私人会所酒窖设计制作</p>
+            </li>
+          </ul>
+          <button class="more_btn">查看更多</button>
+        </div>
+        <div class="introduce">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="./images/home/banner.png" alt="">
+                <div>
+                  <p>专注各类酒窖设计与定制</p>
+                  <p>行业内领先的窖藏全案定制一站式服务商</p>
+                  <p>OUR CASE</p>
+                </div>
+              </div>
+              <!-- <div class="swiper-slide">
+                <img src="./images/home/banner.png" alt="">
+                <div>
+                  <p>专注各类酒窖设计与定制</p>
+                  <p>行业内领先的窖藏全案定制一站式服务商</p>
+                  <p>OUR CASE</p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <img src="./images/home/banner.png" alt="">
+                <div>
+                  <p>专注各类酒窖设计与定制</p>
+                  <p>行业内领先的窖藏全案定制一站式服务商</p>
+                  <p>OUR CASE</p>
+                </div>
+              </div> -->
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./plugins/swiper-4.3.5.min.js"></script>
+    <script>        
+      var mySwiper = new Swiper ('.swiper-container', {
+        loop: true,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+      })        
+    </script>
   </body>
-
-  <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
-    
 </html>
