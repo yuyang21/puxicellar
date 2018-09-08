@@ -1,0 +1,56 @@
+<html>
+  <div id="home">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    {{msg}}
+    <my-template></my-template>
+  </div>
+</html>
+<script type="x-template" id="grid-template" src="../components/header/head.js"> </script>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
+<!-- <script id="head_top" type="text/template" defer></script> -->
+<script>
+  console.log(window)
+    // window.Template.getData("../components/header/head.html")
+    var Header = new Vue({
+      el: '#home',
+      template: 'grid-template',
+      data: {
+        msg: 'Hello Vue.js!',
+        containerId: '111111'
+      },
+      components: {
+        // 'test': {
+        //   template: ''
+        //   // template: '<div class="video-img">'+
+        //   //     '                    <div id="{{containerId}}" class="video-player-wrap">ffffff</div>'+
+        //   //     '                </div>',
+        // }
+      }
+    }) 
+    // Vue.component('ui-header', Header);
+    var demo = new Vue({
+      el: '#demo',
+      data: {
+        searchQuery: '',
+        gridColumns: ['name', 'power'],
+        gridData: [
+          { name: 'Chuck Norris', power: Infinity },
+          { name: 'Bruce Lee', power: 9000 },
+          { name: 'Jackie Chan', power: 7000 },
+          { name: 'Jet Li', power: 8000 }
+        ]
+      }
+    })
+</script>
+<style>
+  #home {
+    font-size: 3.34rem;
+  }
+</style>
