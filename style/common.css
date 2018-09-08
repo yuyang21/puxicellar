@@ -1,4 +1,3 @@
-@import '/mixin';
 body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, li, a, p, h1, h2, h3, h4,h5, h6, i, b, textarea, button, input, select, figure, figcaption, {
     padding: 0;
     margin: 0;
@@ -16,9 +15,6 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     -webkit-margin-after: 0;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    &:hover{
-        outline: none;
-    }
 }
 
 /*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
@@ -26,7 +22,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
 {  
     width: 0px;  
     height: 0px;  
-    background-color: $f5;  
+    background-color: #fff;  
 }  
   
 /*定义滚动条轨道 内阴影+圆角*/  
@@ -34,7 +30,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
 {  
     -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);  
     border-radius: 10px;  
-    background-color: $f5;  
+    background-color: #fff;  
 }  
   
 /*定义滑块 内阴影+圆角*/  
@@ -54,7 +50,7 @@ textarea { -webkit-appearance: none;}
 html,body{
     height: 100%;
     width: 100%;
-    background-color: $f5;
+    background-color: #fff;
 }
 
 
@@ -103,20 +99,6 @@ html,body{
     white-space: nowrap;
 }
 
-.paddingTop{
-    padding-top: 1.95rem;
-}
-
-.header-top {
-    padding-top: .45rem;
-}
-
-.RMB {
-	font-size: .12rem;
-	font-weight: normal;
-	margin-right: 1.5px;
-}
-
 @keyframes backOpacity{
    0%   { opacity: 1 }
    25%  { opacity: .5 }
@@ -131,40 +113,4 @@ html,body{
 
 .border-no {
     border: none !important;
-}
-
-.red-points {
-    position: absolute;
-    @include wh(.18rem, .18rem);
-    @include sc(.13rem, $fc);
-    line-height: .18rem;
-    background: $red;
-    border-radius: 50%;
-    right: -.13rem;
-    top: -.05rem;
-    text-align: center;
-}
-.VueCarousel {
-    .VueCarousel-wrapper {
-        height: 3.75rem;
-    }
-    .VueCarousel-pagination {
-      position: absolute;
-      bottom: 0;
-    }
-}
-
-body.modal-open{
-    position:fixed;
-    width:100%;
-}
-
-.invite, .user_center, .invite_landing {
-    .qrcode img {
-        width: 100% !important;
-        border-radius: 0.05rem;
-    }
-}
-.red {
-    color: $red;
 }
