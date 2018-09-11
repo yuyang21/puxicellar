@@ -136,6 +136,9 @@ li{
     list-style: none;
 }
 
+.text-center{
+  text-align: center;
+}
 /*导航条*/
 .navBar{
   height: .57rem;
