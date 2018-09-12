@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>葡玺酒窖</title>
+    <script src="../config/rem.js"></script>
+    <script src="../plugins/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../style/common.css">
+    <link rel="stylesheet" href="../plugins/swiper-4.3.5.min.css">
+  </head>
+  <style type="text/css">
+    #us {
+      padding-top: .57rem;
+    }
+    .blockImg{
+      width: 100%;
+      display: block;
+    } 
+    .us_content{
+      padding: .4rem 0 .3rem 0;
+    }
+    .art_title{
+      color: #D70C19;
+      font-size: .21rem;
+      text-align: center;
+      margin-bottom: .4rem;
+    }
+    .text_top{
+      padding: 0 .1rem 0.2rem;
+      border-bottom: .01rem solid #EEEEEE;
+      margin-bottom: .4rem;
+    }
+    .text_top p{
+      text-indent: 2em;
+      font-size: .15rem;
+      color: #333333;
+      text-align: justify;
+      margin-bottom: .2rem;
+    }
+    .text_top p:last-child{
+      color: #D70C19;
+    }
+    .wordsImg{
+      height: .16rem;
+      display: block;
+      padding: .4rem 0 .1rem 0;
+    }
+    .text_bottom{
+      padding: 0 .1rem;
+    }
+    .text_bottom li:nth-child(even){
+      background: #EEEEEE;
+      padding-left: .3rem;
+    }
+    .red_tiitle{
+      color: #D70C19;
+      font-size: .2rem;
+      margin-bottom: .15rem;
+    }
+    .result{
+      color: #333333;
+      padding-bottom: .3rem;
+      line-height: 2;
+    }
+  </style>
+  <script>
+    $(function(){
+      var showNav = false
+      $('#guide').click(function(){
+        showNav = !showNav
+        if(showNav){
+          $('#guide').css({transform: 'rotate(-90deg)'});
+          $('.navBar ul').stop().animate({height: '3.56rem'})
+        } else {
+          $('#guide').css({transform: 'rotate(0deg)'});
+          $('.navBar ul').stop().animate({height: '0'})
+        }
+      })
+      $(".tab_list li").click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+      }) 
+    })
+  </script>
+  <body>
+    <div id="us">
+      <img src="../images/us/us_01.jpg" alt="" class="blockImg">
+      <div class="us_content">
+        <p class="art_title">[国玺定乾坤 葡玺掌美酒]</p>
+        <div class="art_text">
+          <div class="text_top">
+            <p>葡玺是一家集酒窖、酒柜、雪茄窖的设计、制作与安装于一体 的专业服务公司。致力于为酒窖业主提供全方位解决方案。葡玺从业酒窖储藏建造及红酒行业十余年，不断满足全球私人及商业储酒需求。葡玺酒窖曾服务于众多知名人士、著名酒店品牌和房地产投资者等客户。 经过多年耕耘，获得了良好的口碑及行业认可。 </p>
+            <p>我们的设计大师熟悉酒窖方方面面，我们的工匠技艺娴熟并且掌握现代制作工艺，我们经验丰富的安装师拥有丰富的技术知识，我们的艺术家能以非凡的艺术作品装饰酒窖，因此，我们能设计和建造可满足所有技术要求和美学期望的酒窖。葡玺设计和建造的酒窖只使用最优质的材料，营造出非凡的空间，为珍藏的葡萄酒藏品提供理想的存储空间，努力确保为您的项目带来更多附加值。</p>
+            <p>酒窖选葡玺，品质有保证。</p>
+          </div>
+          <div class="text_bottom">
+            <ul>
+              <li>
+                <img src="../images/us/us_02.jpg" alt="" class="blockImg">
+              </li>
+              <li>
+                <img src="../images/us/us_01.png" alt="" class="wordsImg">
+                <p class="red_tiitle">使命愿景</p>
+                <p class="result">成为并被公认为提供一流产品和服务的<br>更健康更长久更值得客户信赖的酒窖企业。</p>
+              </li>
+              <li>
+                <img src="../images/us/us_03.jpg" alt="" class="blockImg">
+              </li>
+              <li>
+                <img src="../images/us/us_02.png" alt="" class="wordsImg">
+                <p class="red_tiitle">品牌精髓</p>
+                <p class="result">无瑕至美<br>成就美酒人生</p>
+              </li>
+              <li>
+                <img src="../images/us/us_04.jpg" alt="" class="blockImg">
+              </li>
+              <li>
+                <img src="../images/us/us_03.png" alt="" class="wordsImg">
+                <p class="red_tiitle">核心价值观</p>
+                <p class="result">追求极致 诚信负责<br>成就客户 结果导向</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
