@@ -1,56 +1,162 @@
+<!DOCTYPE html>
 <html>
-  <div id="home">
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    <br/>
-    {{msg}}
-    <my-template></my-template>
-  </div>
-</html>
-<script type="x-template" id="grid-template" src="../components/header/head.js"> </script>
-<script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.min.js"></script>
-<!-- <script id="head_top" type="text/template" defer></script> -->
-<script>
-  console.log(window)
-    // window.Template.getData("../components/header/head.html")
-    var Header = new Vue({
-      el: '#home',
-      template: 'grid-template',
-      data: {
-        msg: 'Hello Vue.js!',
-        containerId: '111111'
-      },
-      components: {
-        // 'test': {
-        //   template: ''
-        //   // template: '<div class="video-img">'+
-        //   //     '                    <div id="{{containerId}}" class="video-player-wrap">ffffff</div>'+
-        //   //     '                </div>',
-        // }
-      }
-    }) 
-    // Vue.component('ui-header', Header);
-    var demo = new Vue({
-      el: '#demo',
-      data: {
-        searchQuery: '',
-        gridColumns: ['name', 'power'],
-        gridData: [
-          { name: 'Chuck Norris', power: Infinity },
-          { name: 'Bruce Lee', power: 9000 },
-          { name: 'Jackie Chan', power: 7000 },
-          { name: 'Jet Li', power: 8000 }
-        ]
-      }
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Cache" content="no-cache">
+    <title>定制</title>
+    <link href="../style/customized.css" rel="stylesheet" type="text/css"/>
+    <link href="../style/common.css" rel="stylesheet" type="text/css"/>
+    <script src="../config/rem.js" type=""></script>
+    <script src="../plugins/jquery-3.3.1.min.js" type=""></script>
+  </head>
+  <script>
+    $(function(){
+      var showNav = false
+      $('#guide').click(function(){
+        showNav = !showNav
+        if(showNav){
+          $('#guide').css({transform: 'rotate(-90deg)'});
+          $('.navBar ul').stop().animate({height: '3.56rem'})
+        } else {
+          $('#guide').css({transform: 'rotate(0deg)'});
+          $('.navBar ul').stop().animate({height: '0'})
+        }
+      }) 
     })
-</script>
-<style>
-  #home {
-    font-size: 3.34rem;
-  }
-</style>
+  </script>
+  <body>
+    <div id="customized">
+      <div class="navBar">
+        <div style="clear: both;">
+          <img class="logo" src="../images/nav/icon.png" alt="" />
+          <img class="nav" id="guide" src="../images/nav/nav_icon.png" alt="">
+        </div>
+        <ul>
+          <li>首页</li>
+          <li>我们</li>
+          <li>定制</li>
+          <li>案例</li>
+          <li>设备</li>
+          <li>服务</li>
+          <li>新闻</li>
+        </ul>
+      </div>
+      <section>
+        <div class="header"></div>
+        <ul class="tab_list">
+          <li class="active">酒窖定制</li>
+          <li>酒柜定制</li>
+          <li>雪茄窖定制</li>
+          <li>酒柜定制</li>
+          <li>艺术配饰</li>
+        </ul>
+        <!-- 酒窖定制 -->
+        <div class="wine_cellar content">
+          <div class="exclusive">
+            <div class="imgs">
+              <div class="right">
+                <p>酒窖 . 定制</p>
+                <img src="../images/customized/Wine_cellar_customization.png">
+                <img src="../images/customized/exclusive.png">
+              </div>
+            </div>
+            <p class="red_title">无以伦比的私人或商用专属酒窖</p>
+            <p class="grey3_title">因您而设 &nbsp;&nbsp; 因地制宜</p>
+            <p class="line"></p>
+            <p class="desr_text">依据您的兴趣爱好、文化品位，我们每一位设计师的想法不断碰撞交融，每一次、每一件设计作品都当做我们的封山创作。</p>
+            
+            <p class="grey3_title">让您走向艺术化的 &nbsp;&nbsp; 充满诗意的生活</p>
+            <p class="line"></p>
+            <p class="desr_text">极具个人魅力的创意设计，超凡的手工艺术工匠技艺，让您的私藏酒窖，彰显尊贵，无以伦比。</p>
+          </div>
+          <div class="space">
+            <p class="red_grey_title"><span>空间</span>选择</p>
+            <p class="grey6_12_title">此情此景各不同 &nbsp;量身定制</p>
+            <p class="line" style="margin-bottom:8px;"></p>
+            <p class="desr_text">根据客户的实际空间，开辟一个存酒的空间，完全达到天然地窖式的恒温、恒湿、避震、除异味等多种功能。</p>
+            <p class="line" style="margin-bottom:8px;"></p>
+            <p class="desr_text">合适作酒窖的位置，既可以是地下室,也可以是普通一角，充分利用闲置空间，实用兼具美化功能。</p>
+            <p class="tip">[恒温] [恒湿] [避震] [除异味] [空间利用]</p>
+          </div>
+          <div class="solid_wood">
+            <div class="imgs" style="overflow: hidden;margin-bottom: .26rem;">
+              <img src="../images/customized/solid_wood.png" class="left">
+              <div class="right">
+                <p class="red_grey_title" style="border-left:1px solid #D70C19;padding-left:.08rem;font-size: .2rem;"><span style="font-size: .2rem;">实木</span>酒架</p>
+                <p class="desr_text" style="font-size:14px;line-height:1.9;padding: .16rem 0 .1rem;margin-bottom: 0;">精选上好材质，精湛匠心工艺，我们注重细节，苛求品质，只为与艺术相结合的完美呈现。</p>
+                <img src="../images/customized/solid.png" style="height:31px">
+              </div>
+            </div>
+            <div class="desr_text" style="margin-bottom: .1rem;">对于每个酒窖项目的酒层架，我们的品质工程师都会对每块木板做到精挑细选。每块木板的要求必须是无虫眼、无结疤、木质纹路清晰、无腐朽等不良症状。</div>
+            <div class="desr_text">为了保证每根木条的美观及弧度美，木制师傅对每根木条进行反复多次砂纸打磨，只有这样才能保证每根木条的每个边角无毛次、不割手、表面光滑。</div>
+          </div>
+        </div>
+        <!-- 品质保障 -->
+        <div class="quality_assurance content">
+        </div>
+        <!-- 无忧售后 -->
+        <div class="free_after_sale content">
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <section class="section1">
+        <p class="city">北京<span>Beijing</span></p>
+        <div class="address">
+            葡玺（北京）酒文化发展有限公司  <br>
+            地址：北京大兴区广平大街9号8幢6105 <br>
+            商务合作：saleshz@puxicellar.com
+        </div>
+        <p class="city">南京<span>Nanjing</span></p>
+        <div class="address">
+            葡玺（北京）酒文化发展有限公司 <span>/ 体验馆</span> <br>
+            地址：北京大兴区广平大街9号8幢6105 <br>
+            商务合作：saleshz@puxicellar.com
+        </div>
+      </section>
+      <section class="section2">
+        <p class="hot_tel_text">全国服务热线</p>
+        <p class="hot_tel_num">400-117-1855</p>
+        <p class="tip">为酒窖业主提供全方位解决方案</p>
+        <p class="title">国玺定乾坤 葡玺掌美酒</p>
+      </section>
+      <ul class="section3">
+        <div class="left">
+          <li>我们</li>
+          <li>案例</li>
+          <li>服务</li>
+        </div>
+        <li class="right">免费沟通，效率更高!</li>
+      </ul>
+    </footer>
+  </body>
+  <script>
+    var $tab_list = $(".tab_list li");
+    var queryType = location.href.split('?')[1];
+    if (queryType) {
+      var indexTab = queryType.split('=')[1];
+    } else {
+      var indexTab = 0
+    }
+    $tab_list.siblings().removeClass('active');
+    $tab_list.eq(indexTab).addClass('active');
+    $('.content').hide();
+    $('.content').eq(indexTab).show();
+    $tab_list.click(function(){
+      var index = $tab_list.index(this);
+      $(this).addClass('active');
+      $(this).siblings().removeClass('active');
+      $('.content').hide();
+      $('.content').eq(index).show();
+    })
+  </script>
+</html>
