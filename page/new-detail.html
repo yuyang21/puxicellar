@@ -88,10 +88,56 @@
     }
     .bottom_pagination{
       border-top: .01rem solid #EEEEEE; 
+      padding: .16rem 0 .4rem 0;
+    }
+    .bottom_pagination span{ 
+      display: inline-block;
+      position: relative;
+    }
+    .bottom_pagination span:first-child{
+      margin-right: .4rem;
+    }
+    .bottom_pagination span:last-child{
+      margin-left: .15rem;
     }
     .bottom_pagination span:first-child::before{
-      /*content: '';
-      width: */
+      content: '';
+      width:0;
+      height:0;
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-width: 9px 12px 9px 0px;
+      border-style: solid;
+      border-color: transparent #666666 transparent transparent;
+      position: absolute;
+      left: -22px;
+      top: 1px;
+    }
+    .bottom_pagination span:nth-child(2)::before{
+      content: '';
+      width: 17px;
+      height: 13px;
+      background: url(../images/nav/icon_grey.png);
+      display: block;
+      position: absolute;
+      top: 4px;
+      left: -28px;
+      background-size: cover;
+    }
+    .bottom_pagination span:last-child::after{
+      content: '';
+      width:0;
+      height:0;
+      display: block;
+      width: 0px;
+      height: 0px;
+      border-width: 9px 0px 9px 12px;
+      border-style: solid;
+      border-color: transparent transparent transparent #666666;
+      position: absolute;
+      right: -22px;
+      top: 1px;
     }
   </style>
   <script>
