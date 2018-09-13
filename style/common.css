@@ -182,8 +182,12 @@ li{
   border: none;
 }
 
+/* footer */
 .footer {
     color: #fff;
+    height: 5.43rem;
+    width: 100%;
+    display: block;
 }
 .footer .section1 {
     padding: .41rem 0 .4rem .1rem;
@@ -272,4 +276,30 @@ li{
 .footer .section3 .left li:nth-child(2) {
     border-left: 1px solid #666;
     border-right: 1px solid #666;
+}
+
+/* 菜单切换 */
+.tab_list {
+    padding: 0 .1rem;
+    overflow: hidden;
+    margin: .39rem auto .3rem;
+}
+.tab_list li {
+    width: 1.74rem;
+    height: .46rem;
+    line-height: .46rem;
+    color: #fff;
+    font-size: .15rem;
+    text-align: center;
+    background: #5A5A5A;
+    margin-bottom: .09rem;
+}
+.tab_list li.active {
+    background: #D70C19;
+}
+.tab_list li:nth-child(odd) {
+    float: left;
+}
+.tab_list li:nth-child(even) {
+    float: right;
 }
