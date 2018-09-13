@@ -58,12 +58,12 @@
   display: block;
   width: 0px;
   height: 0px;
-  border-width: 9px 12px 9px 0px;
+  border-width: .09rem .12rem .09rem 0;
   border-style: solid;
   border-color: transparent #666666 transparent transparent;
   position: absolute;
   left: 0;
-  top: 1px;
+  top: .01rem;
 }
 .bottom_pagination span.return{
   padding-left: .28rem;
@@ -73,12 +73,12 @@
 }
 .bottom_pagination span.return::before{
   content: '';
-  width: 17px;
-  height: 13px;
+  width: .17rem;
+  height: .13rem;
   background: url(../images/nav/icon_grey.png);
   display: block;
   position: absolute;
-  top: 4px;
+  top: .04em;
   left: 0;
   background-size: cover;
 }
@@ -98,10 +98,10 @@
   display: block;
   width: 0px;
   height: 0px;
-  border-width: 9px 0px 9px 12px;
+  border-width: .09rem 0 .09rem .12rem;
   border-style: solid;
   border-color: transparent transparent transparent #666666;
   position: absolute;
   right: 0;
-  top: 1px;
+  top: .01rem;
 }

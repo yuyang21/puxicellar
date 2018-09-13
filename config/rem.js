@@ -18,11 +18,11 @@ $(function(){
     $('#guide').click(function(){
         showNav = !showNav
         if(showNav){
-        $('#guide').css({transform: 'rotate(-90deg)'});
-        $('.navBar ul').stop().animate({height: '3.56rem'})
+            $('#guide').css({transform: 'rotate(-90deg)', transition: '.2s all linear'});
+            $('.navBar ul').stop().animate({height: '3.56rem'})
         } else {
-        $('#guide').css({transform: 'rotate(0deg)'});
-        $('.navBar ul').stop().animate({height: '0'})
+            $('#guide').css({transform: 'rotate(0deg)'});
+            $('.navBar ul').stop().animate({height: '0'})
         }
     })
 
@@ -32,7 +32,7 @@ $(function(){
       indexTab = window.location.href.split('tab=')[1].split('')[0]
     }
     var $tab_list = $(".tab_list li");
-    $tab_list.siblings().removeClass('active');
+    $tab_list.removeClass('active');
     $tab_list.eq(indexTab).addClass('active');
     $('.content').hide();
     $('.content').eq(indexTab).show();
@@ -50,5 +50,10 @@ $(function(){
         window.location.href = arr[0] + 'tab=' + index + arr[1].substr(1)
       }
     })
-
+    // img未加载 
+    if(window.location.href.indexOf('index') !== -1) {
+      $('img').attr('onerror', "onerror=null;src='./images/case/more_case.png';style='width: 17vh;height: auto;margin: 0.2rem auto;'")
+    } else {
+      $('img').attr('onerror', "onerror=null;src='../images/case/more_case.png';style='width: 17vh;height: auto;margin: 0.2rem auto;'")
+    }
 })

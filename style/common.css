@@ -169,7 +169,7 @@ li{
 .navBar ul{
   margin-top: .57rem;
   clear: both;
-  transition: .3s all linear;
+  transition: .2s all linear;
   overflow: hidden;
   height: 0;
 }
