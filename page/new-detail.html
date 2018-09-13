@@ -17,107 +17,8 @@
     <script src="../config/rem.js"></script>
     <link rel="stylesheet" href="../style/common.css">
     <link rel="stylesheet" href="../plugins/swiper-4.3.5.min.css">
+    <link rel="stylesheet" href="../style/new-detail.css">
   </head>
-  <style type="text/css">
-    #new{
-      padding-top: .56rem;
-    }
-
-    .header {
-      width: 100%;
-      height: 2.61rem;
-      background: url('../images/news/news_03.jpg') no-repeat center center;
-      background-size: 100%;
-    }
-
-    .news{
-      padding: 0 .1rem;
-    }
-    .news li{
-      border-bottom: .01rem solid #EEEEEE;
-      padding: 0 .09rem;
-      margin-bottom: .24rem;
-    }
-    .news .artical_title p:first-child{
-      color: #333333;
-      font-size: .16rem;
-      margin-bottom: .1rem;
-    }
-    .news .artical_title p:last-child{
-      color: #999999;
-      font-size: .11rem;
-      margin-bottom: .3rem;
-    }
-    .news .newImg{
-      width: 100%;
-      display: block;
-      margin-bottom: .3rem;
-    }
-    .news .artical_des{
-      color: #666666;
-      font-size: .14rem;
-    }
-    .news .artical_des p{
-      margin-bottom: .15rem;
-      text-align: justify;
-    }
-    .bottom_pagination{
-      border-top: .01rem solid #EEEEEE; 
-      padding: .16rem 0 .4rem 0;
-    }
-    .bottom_pagination span{ 
-      display: inline-block;
-      position: relative;
-    }
-    .bottom_pagination span:first-child{
-      margin-right: .4rem;
-    }
-    .bottom_pagination span:last-child{
-      margin-left: .15rem;
-    }
-    .bottom_pagination span:first-child::before{
-      content: '';
-      width:0;
-      height:0;
-      display: block;
-      width: 0px;
-      height: 0px;
-      border-width: 9px 12px 9px 0px;
-      border-style: solid;
-      border-color: transparent #666666 transparent transparent;
-      position: absolute;
-      left: -22px;
-      top: 1px;
-    }
-    .bottom_pagination span:nth-child(2)::before{
-      content: '';
-      width: 17px;
-      height: 13px;
-      background: url(../images/nav/icon_grey.png);
-      display: block;
-      position: absolute;
-      top: 4px;
-      left: -28px;
-      background-size: cover;
-    }
-    .bottom_pagination span:last-child::after{
-      content: '';
-      width:0;
-      height:0;
-      display: block;
-      width: 0px;
-      height: 0px;
-      border-width: 9px 0px 9px 12px;
-      border-style: solid;
-      border-color: transparent transparent transparent #666666;
-      position: absolute;
-      right: -22px;
-      top: 1px;
-    }
-    img{
-      position: relative;
-    }
-  </style>
   <body>
     <div class="navBar">
       <div >
@@ -137,10 +38,10 @@
     <div id="new">
       <div class="header"></div>
       <ul class="tab_list">
-        <li class="active">公司新闻</li>
-        <li>酒窖常识</li>
+        <a href="./news-list.html"><li class="active">公司新闻</li></a>
+        <a href="./news-list.html?tab=1"><li style="float: right;">酒窖常识</li></a>
       </ul>
-      <div class="news">
+      <div class="news content">
         <div class="artical_title">
           <p class="text-center">酒窖设计酒架大组合</p>
           <p class="text-center">2018-01-23</p>
@@ -152,9 +53,26 @@
           <p>它的制作设备太庞大，所以对于一些小型酒窖这种做法代价比较大，虽然这种做法的保温层的效果很好，但是造价相对较高。</p>
         </div>
         <div class="bottom_pagination text-center">
-          <span>上一篇</span>
-          <span>返回列表</span>
-          <span>下一篇</span>
+          <a href="javascript:;"><span class="pre">上一篇</span></a>
+          <a href="./news-list.html"><span class="return">返回列表</span></a>
+          <a href="javascript:;"><span class="next">下一篇</span></a>
+        </div>
+      </div>
+      <div class="news content">
+        <div class="artical_title">
+          <p class="text-center">酒窖设计酒架大组合</p>
+          <p class="text-center">2018-01-23</p>
+        </div>
+        <img src="../images/home/news_img.png" alt="" class="newImg">
+        <div class="artical_des">
+          <p>酒窖的恒温系统是由保温门和酒窖保温层，还有酒窖恒温设备三部分构成。今天就酒窖保温层葡玺酒窖公司来做一个剖析。酒窖的墙体和顶地6个面都有必要做保温处理，当然，这也是酒窖缔造中比较首要的环节。墙体需要测量、计算得到一个比照精确的数值来满意各个空间的储藏请求。酒窖保温层的做法有多种方式，每种做法都都有优点也有不足，葡玺酒窖公司提出的几种标准的制作方法。主要按照造价及效果来做了分类。</p>
+          <p> 第一种就是挤塑板保温层，主要的做法就是首先在要做保温的地方打上龙骨，这样的作法是用龙骨来固定挤塑板，然后把挤塑板裁成想要的大小，然后塞在龙骨中间，用发泡剂来固定，这种挤塑板的保温层造价最低，当然保温层效果是一般的，但是对于地下室的酒窖来讲是足够用的了。</p>
+          <p>它的制作设备太庞大，所以对于一些小型酒窖这种做法代价比较大，虽然这种做法的保温层的效果很好，但是造价相对较高。</p>
+        </div>
+        <div class="bottom_pagination text-center">
+          <a href="javascript:;"><span class="pre">上一篇</span></a>
+          <a href="./news-list.html"><span class="return">返回列表</span></a>
+          <a href="javascript:;"><span class="next">下一篇</span></a>
         </div>
       </div>
     </div>
