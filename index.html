@@ -98,27 +98,27 @@
         <div class="case">
           <img src="./images/home/customer_title.png" alt="" class="title">
           <ul>
-            <li><a href="page/case.html">
+            <li><a href="page/case-detail.html?tab=1">
               <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
             </a></li>
-            <li><a href="page/case.html">
+            <li><a href="page/case-detail.html?tab=0">
               <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
             </a></li>
-            <li><a href="page/case.html">
+            <li><a href="page/case-detail.html?tab=1">
               <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
             </a></li>
-            <li><a href="page/case.html">
+            <li><a href="page/case-detail.html?tab=2">
               <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
             </a></li>
-            <li><a href="page/case.html">
+            <li><a href="page/case-detail.html?tab=3">
               <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
             </a></li>
-            <li><a href="page/case.html">
+            <li><a href="page/case-detail.html?tab=1">
               <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
             </a></li>
@@ -205,7 +205,7 @@
           <a href="page/news-list.html"><div class="more_btn">查看更多</div></a>
         </div>
       </div>
-      <footer class="footer">
+      <!-- <footer class="footer">
         <section class="section1">
           <p class="city">北京<span>Beijing</span></p>
           <div class="address">
@@ -234,12 +234,16 @@
           </div>
           <li class="right"><a href="tel:400-117-1855">免费沟通，效率更高!</a></li>
         </ul>
-      </footer>
+      </footer> -->
+      <embed type="text/html" src="./page/common/footer.html" class="footer"/>
     </div>
     <script src="./plugins/swiper-4.3.5.min.js"></script>
-    <script>        
+    <script>
       var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
+        autoplay: {
+          delay: 3000,//1秒切换一次
+        },
         pagination: {
           el: '.swiper-pagination',
         },
@@ -250,7 +254,7 @@
         scrollbar: {
           el: '.swiper-scrollbar',
         },
-      })        
+      })
     </script>
   </body>
 </html>

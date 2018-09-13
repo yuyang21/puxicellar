@@ -1,11 +1,11 @@
-#equipment {
+#case-detail {
   padding-top: .55rem;
 }
 
 .header {
   width: 100%;
   height: 2.61rem;
-  background: url('../images/equipment/equipment.jpg') no-repeat center 0;
+  background: url('../images/case/success_case.png') no-repeat center 0;
   background-size: 100%;
 }
 .content{
