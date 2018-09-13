@@ -227,21 +227,6 @@
       width: 100%
     }
   </style>
-  <script>
-    $(function(){
-      var showNav = false
-      $('#guide').click(function(){
-        showNav = !showNav
-        if(showNav){
-          $('#guide').css({transform: 'rotate(-90deg)'});
-          $('.navBar ul').stop().animate({height: '3.56rem'})
-        } else {
-          $('#guide').css({transform: 'rotate(0deg)'});
-          $('.navBar ul').stop().animate({height: '0'})
-        }
-      }) 
-    })
-  </script>
   <body>
     <div class="navBar">
       <div style="clear: both;">

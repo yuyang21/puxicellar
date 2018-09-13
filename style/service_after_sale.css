@@ -1,9 +1,9 @@
 #service_after_sale {
-  padding-top: .57rem;
-  margin-bottom: .31rem;
+  padding-top: .56rem;
 }
 #service_after_sale .content {
   display: none;
+  margin-bottom: .39rem;
 }
 .header {
   width: 100%;
@@ -25,7 +25,6 @@
   text-align: center;
   background: #5A5A5A;
   margin-bottom: .09rem;
-  font-weight: 100;
 }
 .tab_list li.active {
   background: #D70C19;
@@ -55,6 +54,7 @@
 }
 .content .title span {
   color: #D70C19;
+  font-size: .21rem;
 }
 /* 服务流程 */
 .service_flow {
@@ -116,6 +116,7 @@
   height: .34rem;
   color: #333;
   padding: .18rem 0 .2rem;
+  box-sizing: content-box;
 }
 .service_flow li:nth-child(odd) .desr {
   width: 1.08rem;
@@ -135,12 +136,66 @@
 .free_after_sale .text {
   margin-bottom: .21rem;
 }
+.free_after_sale img {
+  display: block;
+}
 .free_after_sale .promise {
   font-size: .15rem;
   color: #666;
   text-align: justify;
   line-height: 1.7;
+  height: 3.17rem;
+  margin-top: .28rem;
 }
 .free_after_sale .promise p {
   margin-bottom: .08rem;
+}
+/* 品质保障 */
+.quality_assurance .container {
+  clear: both;
+}
+.quality_assurance .text {
+  margin-bottom: .2rem;
+}
+.quality_assurance .container .imgs {
+  clear: both;
+  overflow: hidden;
+  position: relative;
+}
+.quality_assurance .container .img_text {
+  font-size: .15rem;
+  color: #666;
+  text-align: justify;
+  margin: .28rem 0 .38rem;
+}
+.quality_assurance .container .imgs1 .quality_01, .quality_assurance .container .imgs3 .quality_04 {
+  width: 2.13rem;
+  height: 2.24rem;
+}
+.quality_assurance .container .imgs1 .right img:first-child {
+  width: 1.19rem;
+  display: block;
+  margin: .22rem 0;
+}
+.quality_assurance .container .imgs1 .right img:last-child {
+  width: 1.64rem;
+  height: .82rem;
+  display: block;
+  position: absolute;
+  right: 0;
+}
+.quality_assurance .container .imgs2 .quality_02 {
+  width: 1.49rem;
+  margin-top: .45rem;
+}
+.quality_assurance .container .imgs2 .quality_03 {
+  width: 1.81rem;
+  height: 1.96rem;
+}
+.quality_assurance .container .imgs3 .quality_03 {
+  width: 1.03rem;
+  margin-top: .45rem;
+}
+.margin_b_5 {
+  margin-bottom: .15rem;
 }
