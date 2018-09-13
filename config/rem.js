@@ -13,6 +13,7 @@
 
 $(function(){
     // 导航栏动效
+    
     var showNav = false
     $('#guide').click(function(){
         showNav = !showNav
@@ -26,27 +27,28 @@ $(function(){
     })
 
     // 菜单栏切换
-    var $tab_list = $(".tab_list li");
-    var queryType = location.href.split('?')[1];
-    if (queryType) {
-      var indexTab = queryType.split('=')[1];
-    } else {
-      var indexTab = 0
+    var indexTab = 0
+    if (window.location.href.indexOf('tab') !== -1) {
+      indexTab = window.location.href.split('tab=')[1].split('')[0]
     }
+    var $tab_list = $(".tab_list li");
     $tab_list.siblings().removeClass('active');
     $tab_list.eq(indexTab).addClass('active');
     $('.content').hide();
     $('.content').eq(indexTab).show();
+    var url = window.location.href
     $tab_list.click(function(){
+      var arr = getQueryString('tab')
+      function getQueryString(name) {  
+        arr = window.location.href.split(name + '=')
+        return arr
+      }
       var index = $tab_list.index(this);
-      $(this).addClass('active');
-      $(this).siblings().removeClass('active');
-      $('.content').hide();
-      $('.content').eq(index).show();
+      if (window.location.href.indexOf('tab') === -1){
+        window.location.href += '?tab=' + index
+      } else {
+        window.location.href = arr[0] + 'tab=' + index + arr[1].substr(1)
+      }
     })
 
-    // footer
-    $('#tel').click(function () {
-        window.location.href = "tel:4001171855"
-    })
 })
