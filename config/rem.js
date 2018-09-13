@@ -44,4 +44,9 @@ $(function(){
       $('.content').hide();
       $('.content').eq(index).show();
     })
+
+    // footer
+    $('#tel').click(function () {
+        window.location.href = "tel:4001171855"
+    })
 })
