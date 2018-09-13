@@ -189,9 +189,10 @@ li{
 /* footer */
 .footer {
     color: #fff;
-    height: 5.43rem;
+    /*height: 5.42rem;*/
     width: 100%;
-    display: block;
+    /*display: block;*/
+    overflow: hidden;;
 }
 .footer .section1 {
     padding: .41rem 0 .4rem .1rem;
@@ -246,8 +247,8 @@ li{
     margin: .2rem auto .41rem;
 }
 .footer .section3 {
-    height: .46rem;
-    line-height: .46rem;
+    height: .45rem;
+    line-height: .45rem;
     background: #CB0F1B;
     text-align: center;
     overflow: hidden;
@@ -276,6 +277,8 @@ li{
 .footer .section3 .left li {
     width: 33.33%;
     float: left;
+    height: .46rem;
+    line-height: .47rem;
 }
 .footer .section3 .left li:nth-child(2) {
     border-left: 1px solid #666;

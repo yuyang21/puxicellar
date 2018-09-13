@@ -20,11 +20,6 @@ $(function(){
         if(showNav){
         $('#guide').css({transform: 'rotate(-90deg)'});
         $('.navBar ul').stop().animate({height: '3.56rem'})
-        $('#navBar').attr('height','4.13rem')
-        $('.navBar').height('4.13rem')
-        $('#navBar').height('4.13rem')
-        $('#navBar').css({'height': '4.13rem'})
-        console.log(1)
         } else {
         $('#guide').css({transform: 'rotate(0deg)'});
         $('.navBar ul').stop().animate({height: '0'})
