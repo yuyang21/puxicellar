@@ -13,8 +13,8 @@
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="Cache" content="no-cache">
     <title>葡玺酒窖</title>
-    <script src="../config/rem.js"></script>
     <script src="../plugins/jquery-3.3.1.min.js"></script>
+    <script src="../config/rem.js"></script>
     <link rel="stylesheet" href="../style/common.css">
     <link rel="stylesheet" href="../plugins/swiper-4.3.5.min.css">
   </head>
@@ -73,26 +73,22 @@
       line-height: 2;
     }
   </style>
-  <script>
-    $(function(){
-      var showNav = false
-      $('#guide').click(function(){
-        showNav = !showNav
-        if(showNav){
-          $('#guide').css({transform: 'rotate(-90deg)'});
-          $('.navBar ul').stop().animate({height: '3.56rem'})
-        } else {
-          $('#guide').css({transform: 'rotate(0deg)'});
-          $('.navBar ul').stop().animate({height: '0'})
-        }
-      })
-      $(".tab_list li").click(function(){
-        $(this).addClass('active');
-        $(this).siblings().removeClass('active');
-      }) 
-    })
-  </script>
   <body>
+    <div class="navBar">
+      <div >
+        <img class="logo" src="../images/nav/icon.png" alt="" />
+        <img class="nav" id="guide" src="../images/nav/nav_icon.png" alt="">
+      </div>
+      <ul>
+        <a href="../index.html"><li>首页</li></a>
+        <a href="./us.html"><li>我们</li></a>
+        <a href="./customized.html"><li>定制</li></a>
+        <a href="./case.html"><li>案例</li></a>
+        <a href="./equipment.html"><li>设备</li></a>
+        <a href="./service-after-sale.html"><li>服务</li></a>
+        <a href="./news-list.html"><li class="last">新闻</li></a>
+      </ul>
+    </div>
     <div id="us">
       <img src="../images/us/us_01.jpg" alt="" class="blockImg">
       <div class="us_content">
@@ -134,5 +130,35 @@
         </div>
       </div>
     </div>
+    <footer class="footer">
+      <section class="section1">
+        <p class="city">北京<span>Beijing</span></p>
+        <div class="address">
+            葡玺（北京）酒文化发展有限公司  <br>
+            地址：北京大兴区广平大街9号8幢6105 <br>
+            商务合作：saleshz@puxicellar.com
+        </div>
+        <p class="city">南京<span>Nanjing</span></p>
+        <div class="address">
+            葡玺（北京）酒文化发展有限公司 <span>/ 体验馆</span> <br>
+            地址：北京大兴区广平大街9号8幢6105 <br>
+            商务合作：saleshz@puxicellar.com
+        </div>
+      </section>
+      <section class="section2">
+        <p class="hot_tel_text">全国服务热线</p>
+        <p class="hot_tel_num">400-117-1855</p>
+        <p class="tip">为酒窖业主提供全方位解决方案</p>
+        <p class="title">国玺定乾坤 葡玺掌美酒</p>
+      </section>
+      <ul class="section3">
+        <div class="left">
+          <li><a href="us.html">我们</a></li>
+          <li><a href="case.html">案例</a></li>
+          <li><a href="service-after-sale.html">服务</a></li>
+        </div>
+        <li class="right"><a href="tel:400-117-1855">免费沟通，效率更高!</a></li>
+      </ul>
+    </footer>
   </body>
 </html>

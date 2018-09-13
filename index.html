@@ -13,264 +13,62 @@
     <meta http-equiv="Expires" content="-1">
     <meta http-equiv="Cache" content="no-cache">
     <title>葡玺酒窖</title>
-    <script src="./config/rem.js"></script>
     <script src="./plugins/jquery-3.3.1.min.js"></script>
+    <script src="./config/rem.js"></script>
     <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./plugins/swiper-4.3.5.min.css">
+    <link rel="stylesheet" href="./style/home.css">
   </head>
-  <style type="text/css">
-    #swiper1 .swiper-container {
-      width: 100%;
-      height: 4.17rem;
-    } 
-    .introduce .swiper-container {
-      width: 100%;
-      height: 3.71rem;
-    } 
-    .swiper-container .swiper-slide{
-      position: relative;
-      color: #fff;
-    }
-    #swiper1 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-      bottom: .2rem;
-    }
-    #swiper1 .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-      width: .12rem;
-      height: .12rem;
-      background: #fff;
-      margin: 0 .06rem;
-    }
-    #swiper1 .swiper-container .swiper-slide div{
-      position: relative;
-      z-index: 2;
-      padding-top: 1.4rem;
-      text-align: center;
-    }
-    #swiper1 .swiper-container .swiper-slide div p:first-child{
-      color: #F5F1F1;
-      font-size: .21rem;
-    }
-    #swiper1 .swiper-container .swiper-slide div p:nth-child(2){
-      color: #F5F1F1;
-      font-size: .15rem;
-      margin-top: .22rem;
-      margin-bottom: .25rem;
-    }
-    #swiper1 .swiper-container .swiper-slide div p:last-child{
-      color: #FFFFFF;
-      font-size: .09rem;
-      width: .92rem;
-      height: .2rem;
-      line-height: .2rem;
-      margin: 0 auto;
-      border: 1px solid #fff;
-      border-radius: .1rem;
-    }
-    #swiper1 .swiper-container .swiper-slide img{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 0;
-    }
-    .home{
-      padding-top: .57rem;
-    }
-    .custom ul{
-      clear: both;
-      padding: 0 .09rem;
-    }
-    .custom ul li{
-      width: 50%;
-      float: left;
-      padding: .1rem .4rem;
-      text-align: center;
-    }
-    .border-right{
-      border-right: .01rem solid #EEEEEE;
-    }
-    .border-bottom{
-      border-bottom: .01rem solid #EEEEEE;
-    }
-    .custom ul li img{
-      width: .98rem;
-    }
-    .custom .title{
-      width: 1.92rem;
-      padding: .4rem 0 .3rem;
-      margin: 0 auto;
-      display: block;
-    }
-    .case .title{
-      width: 2.37rem;
-      padding: .4rem 0 .3rem;
-      margin: 0 auto;
-      display: block;
-    }
-    .case ul{
-      padding: 0 .08rem;
-      overflow: hidden;
-    }
-    .case ul li:nth-child(odd){
-      float: left;
-      width: 1.77rem;
-      text-align: center;
-      margin-bottom: .2rem;
-    }
-    .case ul li:nth-child(even){
-      float: right;
-      width: 1.77rem;
-      text-align: center;
-      margin-bottom: .2rem;
-    }
-    .case ul li p{
-      color: #333333;
-      font-size: .13rem;
-      margin-top: .14rem;
-    }
-    .more_btn{
-      border: .015rem solid #999999;
-      background: none;
-      width: .91rem;
-      height: .35rem;
-      line-height: .33rem;
-      color: #333333;
-      font-size: .14rem;
-      margin: .4rem auto;
-      display: block;
-      text-align: center;
-    }
-    .introduce .swiper-container .swiper-slide .banner_bg{
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      z-index: 0;
-    }
-    .introduce .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet{
-      width: .12rem;
-      height: .12rem;
-      background: #fff;
-      margin: 0 .06rem;
-    }
-    .introduce .swiper-container .swiper-slide .text{
-      position: relative;
-      z-index: 2;
-      padding-top: .45rem;
-      text-align: center;
-    }
-    .introduce .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
-      bottom: .28rem;
-    }
-    .introduce .icon{
-      width: .72rem;
-    }
-    .introduce .text p{
-      width: 3rem;
-      margin: .2rem auto;
-      line-height: .3rem;
-    }
-    .introduce .text .btn{
-      width: .91rem;
-      height: .35rem;
-      border: .015rem solid #ffffff80;
-      line-height: .33rem;
-      background: none;
-      color: #fff;
-      margin: 0 auto;
-    }
-    .news li{
-      border-bottom: .01rem solid #EEEEEE;
-      padding: 0 .09rem;
-      margin-bottom: .24rem;
-    }
-    .news .title{
-      width: 1.38rem;
-      display: block;
-      padding: .4rem 0 .3rem;
-      margin: 0 auto;
-    }
-    .news .newImg{
-      width: 100%;
-      display: block;
-      margin-bottom: .15rem;
-    }
-    .news .abstract{
-      font-size: .16rem;
-      color: #333333;
-      margin-bottom: .15rem;
-    }
-    .news .describe{
-      font-size: .13rem;
-      color: #666666;
-      margin-bottom: .06rem;
-    }
-    .news .dataTime .clock{
-      float: left;
-      width: .18rem;
-    }
-    .news .dataTime{
-      overflow: hidden;
-      padding-bottom: .14rem;
-    }
-    .news .dataTime span{
-      float: left;
-      color: #999999;
-      font-size: .11rem;
-      margin-left: .1rem;
-      line-height: .18rem;
-    }
-    .news .dataTime .to_detail{
-      float: right;
-      width: .19rem;
-    }
-    .block_width{
-      display: block;
-      width: 100%
-    }
-  </style>
   <body>
     <div class="navBar">
-      <div style="clear: both;">
+      <div >
         <img class="logo" src="./images/nav/icon.png" alt="" />
         <img class="nav" id="guide" src="./images/nav/nav_icon.png" alt="">
       </div>
       <ul>
-        <li>首页</li>
-        <li>我们</li>
-        <li>定制</li>
-        <li>案例</li>
-        <li>设备</li>
-        <li>服务</li>
-        <li>新闻</li>
+        <a href="index.html"><li>首页</li></a>
+        <a href="page/us.html"><li>我们</li></a>
+        <a href="page/customized.html"><li>定制</li></a>
+        <a href="page/case.html"><li>案例</li></a>
+        <a href="page/equipment.html"><li>设备</li></a>
+        <a href="page/service-after-sale.html"><li>服务</li></a>
+        <a href="page/news-list.html"><li class="last">新闻</li></a>
       </ul>
     </div>
     <div class="home">
       <div class="banner" id="swiper1">
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
+              <div class="swiper-slide">
+                <a href="page/customized.html">
                   <img src="./images/home/banner.png" alt="">
                   <div>
                     <p>专注各类酒窖设计与定制</p>
                     <p>行业内领先的窖藏全案定制一站式服务商</p>
                     <p>OUR CASE</p>
                   </div>
-                </div>
-                <div class="swiper-slide">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="page/customized.html">
                   <img src="./images/home/banner.png" alt="">
                   <div>
                     <p>专注各类酒窖设计与定制</p>
                     <p>行业内领先的窖藏全案定制一站式服务商</p>
                     <p>OUR CASE</p>
                   </div>
-                </div>
-                <div class="swiper-slide">
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="page/customized.html">
                   <img src="./images/home/banner.png" alt="">
                   <div>
                     <p>专注各类酒窖设计与定制</p>
                     <p>行业内领先的窖藏全案定制一站式服务商</p>
                     <p>OUR CASE</p>
                   </div>
-                </div>
+                </a>
+              </div>
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -279,80 +77,86 @@
         <div class="custom">
           <img src="./images/home/advanced_title.png" alt="" class="title">
           <ul>
-            <li class="border-bottom border-right">
+            <a href="page/customized.html"><li class="border-bottom border-right">
               <img src="./images/home/advanced_red_1.png" alt="">
               <p>酒窖定制</p>
-            </li>
-            <li class="border-bottom">
+            </li></a>
+            <a href="page/customized.html"><li class="border-bottom">
               <img src="./images/home/advanced_2.png" alt="">
               <p>酒柜定制</p>
-            </li>
-            <li class="border-right">
+            </li></a>
+            <a href="page/customized.html"><li class="border-right">
               <img src="./images/home/advanced_3.png" alt="">
               <p>雪茄窖定制</p>
-            </li>
-            <li>
+            </li></a>
+            <a href="page/customized.html"><li>
               <img src="./images/home/advanced_4.png" alt="">
               <p>雪茄柜定制</p>
-            </li>
+            </li></a>
           </ul>
         </div>
         <div class="case">
           <img src="./images/home/customer_title.png" alt="" class="title">
           <ul>
-            <li>
+            <li><a href="page/case.html">
               <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
-            </li>
-            <li>
+            </a></li>
+            <li><a href="page/case.html">
               <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
-            </li>
-            <li>
+            </a></li>
+            <li><a href="page/case.html">
               <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
-            </li>
-            <li>
+            </a></li>
+            <li><a href="page/case.html">
               <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
-            </li>
-            <li>
+            </a></li>
+            <li><a href="page/case.html">
               <img class="block_width" src="./images/home/customer_1.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
-            </li>
-            <li>
+            </a></li>
+            <li><a href="page/case.html">
               <img class="block_width" src="./images/home/customer_2.png" alt="" width="100%">
               <p>香山私人会所酒窖设计制作</p>
-            </li>
+            </a></li>
           </ul>
-          <div class="more_btn">查看更多</div>
+          <a href="page/case.html"><div class="more_btn">查看更多</div></a>
         </div>
         <div class="introduce">
           <div class="swiper-container" id="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <img class="banner_bg" src="./images/custo_mized/banner.png" alt="">
-                <div class="text">
-                  <img class="icon" src="./images/home/icon-1.png" alt="">
-                  <p>葡玺是一家集酒窖、酒柜、雪茄窖的设计、制作与安装于一体的专业服务公司。致力于为酒窖业主提供全方位解决方案。</p>
-                  <div class="btn">公司介绍</div>
-                </div>
+                <a href="page/us.html">
+                  <img class="banner_bg" src="./images/customized/banner.png" alt="">
+                  <div class="text">
+                    <img class="icon" src="./images/home/icon-1.png" alt="">
+                    <p>葡玺是一家集酒窖、酒柜、雪茄窖的设计、制作与安装于一体的专业服务公司。致力于为酒窖业主提供全方位解决方案。</p>
+                    <div class="btn">公司介绍</div>
+                  </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <img class="banner_bg" src="./images/custo_mized/banner.png" alt="">
-                <div class="text">
-                  <img class="icon" src="./images/custo_mized/process.png" alt="">
-                  <p>从最初需求到效果实现，从完美设计到精湛工艺，考量收藏和展示的用户体验，葡玺为您一路思考周全。</p>
-                  <div class="btn">服务流程</div>
-                </div>
+                <a href="page/service-after-sale.html">
+                  <img class="banner_bg" src="./images/customized/banner.png" alt="">
+                  <div class="text">
+                    <img class="icon" src="./images/customized/process.png" alt="">
+                    <p>从最初需求到效果实现，从完美设计到精湛工艺，考量收藏和展示的用户体验，葡玺为您一路思考周全。</p>
+                    <div class="btn">服务流程</div>
+                  </div>
+                </a>
               </div>
               <div class="swiper-slide">
-                <img class="banner_bg" src="./images/custo_mized/banner.png" alt="">
-                <div class="text">
-                  <img class="icon" src="./images/custo_mized/guarantee.png" alt="">
-                  <p>从选材到设计，从施工到验收，乃至售后，葡玺秉持着工匠精神，专业态度，力求将每个步骤做到完美，只为成就您的品质生活。</p>
-                  <div class="btn">品质保障</div>
-                </div>
+                <a href="page/service-after-sale.html">
+                  <img class="banner_bg" src="./images/customized/banner.png" alt="">
+                  <div class="text">
+                    <img class="icon" src="./images/customized/guarantee.png" alt="">
+                    <p>从选材到设计，从施工到验收，乃至售后，葡玺秉持着工匠精神，专业态度，力求将每个步骤做到完美，只为成就您的品质生活。</p>
+                    <div class="btn">品质保障</div>
+                  </div>
+                </a>
               </div>
             </div>
             <div class="swiper-pagination"></div>
@@ -362,39 +166,75 @@
           <img src="./images/home/news_title.png" alt="" class="title">
           <ul>
             <li>
-              <img src="./images/home/news_img.png" alt="" class="newImg">
-              <p class="abstract">匠心12年，时间是最好的承诺</p>
-              <p class="describe">葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…</p>
-              <div class="dataTime">
-                <img src="./images/home/clock.png" alt="" class="clock">
-                <span>2018-01-23</span>
-                <img src="./images/home/arrow.png" alt="" class="to_detail">
-              </div>
+              <a href="page/new-detail.html">
+                <img src="./images/home/news_img.png" alt="" class="newImg">
+                <p class="abstract">匠心12年，时间是最好的承诺</p>
+                <p class="describe">葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…</p>
+                <div class="dataTime">
+                  <img src="./images/home/clock.png" alt="" class="clock">
+                  <span>2018-01-23</span>
+                  <img src="./images/home/arrow.png" alt="" class="to_detail">
+                </div>
+              </a>
             </li>
             <li>
-              <img src="./images/home/news_img.png" alt="" class="newImg">
-              <p class="abstract">匠心12年，时间是最好的承诺</p>
-              <p class="describe">葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…</p>
-              <div class="dataTime">
-                <img src="./images/home/clock.png" alt="" class="clock">
-                <span>2018-01-23</span>
-                <img src="./images/home/arrow.png" alt="" class="to_detail">
-              </div>
+              <a href="page/new-detail.html">
+                <img src="./images/home/news_img.png" alt="" class="newImg">
+                <p class="abstract">匠心12年，时间是最好的承诺</p>
+                <p class="describe">葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…</p>
+                <div class="dataTime">
+                  <img src="./images/home/clock.png" alt="" class="clock">
+                  <span>2018-01-23</span>
+                  <img src="./images/home/arrow.png" alt="" class="to_detail">
+                </div>
+              </a>
             </li>
-            <li style="border: none;">
-              <img src="./images/home/news_img.png" alt="" class="newImg">
-              <p class="abstract">匠心12年，时间是最好的承诺</p>
-              <p class="describe">葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…</p>
-              <div class="dataTime">
-                <img src="./images/home/clock.png" alt="" class="clock">
-                <span>2018-01-23</span>
-                <img src="./images/home/arrow.png" alt="" class="to_detail">
-              </div>
+            <li>
+              <a href="page/new-detail.html">
+                <img src="./images/home/news_img.png" alt="" class="newImg">
+                <p class="abstract">匠心12年，时间是最好的承诺</p>
+                <p class="describe">葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…</p>
+                <div class="dataTime">
+                  <img src="./images/home/clock.png" alt="" class="clock">
+                  <span>2018-01-23</span>
+                  <img src="./images/home/arrow.png" alt="" class="to_detail">
+                </div>
+              </a>
             </li>
           </ul>
-          <div class="more_btn">查看更多</div>
+          <a href="page/news-list.html"><div class="more_btn">查看更多</div></a>
         </div>
       </div>
+      <footer class="footer">
+        <section class="section1">
+          <p class="city">北京<span>Beijing</span></p>
+          <div class="address">
+              葡玺（北京）酒文化发展有限公司  <br>
+              地址：北京大兴区广平大街9号8幢6105 <br>
+              商务合作：saleshz@puxicellar.com
+          </div>
+          <p class="city">南京<span>Nanjing</span></p>
+          <div class="address">
+              葡玺（北京）酒文化发展有限公司 <span>/ 体验馆</span> <br>
+              地址：北京大兴区广平大街9号8幢6105 <br>
+              商务合作：saleshz@puxicellar.com
+          </div>
+        </section>
+        <section class="section2">
+          <p class="hot_tel_text">全国服务热线</p>
+          <p class="hot_tel_num">400-117-1855</p>
+          <p class="tip">为酒窖业主提供全方位解决方案</p>
+          <p class="title">国玺定乾坤 葡玺掌美酒</p>
+        </section>
+        <ul class="section3">
+          <div class="left">
+            <li><a href="./page/us.html">我们</a></li>
+            <li><a href="./page/case.html">案例</a></li>
+            <li><a href="./page/service-after-sale.html">服务</a></li>
+          </div>
+          <li class="right"><a href="tel:400-117-1855">免费沟通，效率更高!</a></li>
+        </ul>
+      </footer>
     </div>
     <script src="./plugins/swiper-4.3.5.min.js"></script>
     <script>        

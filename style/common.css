@@ -161,7 +161,6 @@ li{
   float: right;
   margin: .2rem .25rem;
   display: block;
-  transition: .3s all ease;
 }
 .navBar ul{
   margin-top: .57rem;
@@ -179,7 +178,7 @@ li{
   text-align: center;
   border-bottom: .01rem solid #353535;
 }
-.navBar ul li:last-child{
+.navBar ul li.last{
   border: none;
 }
 
@@ -243,16 +242,24 @@ li{
     line-height: .46rem;
     background: #CB0F1B;
     text-align: center;
+    overflow: hidden;
 }
-.footer .section3 li {
-    display: inline-block;
+.footer .section3 li a{
     font-size: .12rem;
+    color: #fff;
 }
-.footer .section3 li.right {
+.footer .section3 li{
+    display: inline-block;
+
+}
+.footer .section3 li.right a {
     width: 1.68rem;
     padding-left: .37rem;
-    background: url('../images/footer/tel.png') no-repeat 0.1rem 0.1rem;
+    background: url(../images/footer/tel.png) no-repeat 0.1rem 0.1rem;
     background-size: 14.5%;
+    display: block;
+    color: #fff;
+    font-size: .12rem;
 }
 .footer .section3 .left {
     width: 2.07rem;
