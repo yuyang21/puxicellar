@@ -10,6 +10,25 @@
     background: url('../images/customized/customized.png') no-repeat center center;
     background-size: 100%;
 }
+.line {
+    background: #D70C19;
+    width: .18rem;
+    height: .02rem;
+    margin: .1rem 0 .2rem;
+}
+.line.margin_b_8 {
+    margin-bottom: .08rem;
+}
+.desr_text {
+    font-size: .15rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: .26rem;
+    letter-spacing: -.15px;
+}
+.desr_text.margin_b_6 {
+    margin-bottom: .06rem;
+}
 .wine_cellar {
     overflow: hidden;
 }
@@ -55,24 +74,8 @@
     color: #333;
     margin-top: .19rem;
 }
-.line {
-    background: #D70C19;
-    width: .18rem;
-    height: .02rem;
-    margin: .1rem 0 .2rem;
-}
-.line.margin_b_8 {
-    margin-bottom: .08rem;
-}
-.desr_text {
-    font-size: .15rem;
-    color: #666;
-    line-height: 1.7;
-    margin-bottom: .26rem;
-    letter-spacing: -.15px;
-}
-.desr_text.margin_b_6 {
-    margin-bottom: .06rem;
+.exclusive .line {
+    height: .021rem;
 }
 .space {
     width: 100%;
@@ -214,8 +217,15 @@
 .ecological_reduction .title {
     margin: .33rem 0 .13rem .56rem;
 }
+.ecological_reduction .title .line {
+    margin: -.01rem 0 .13rem;
+}
 .ecological_reduction .text {
-    margin: .15rem 0 .13rem .56rem;
+    margin: .11rem 0 .13rem .56rem;
+}
+.ecological_reduction .text .desr_text {
+    letter-spacing: -.01rem;
+    width: 3.1rem;
 }
 .art_accessories {
     overflow: hidden;
@@ -233,14 +243,31 @@
     position: absolute;
     color: #FFF;
     top: .22rem;
+    z-index: 9;
+}
+.art_accessories .imgs .left p:first-child {
+    margin-bottom: .1rem;
+    font-size: .2rem;
+    line-height: .2rem;
+}
+.art_accessories .imgs .left p:first-child {
+    font-size: .12rem;
+    line-height: .12rem;
 }
 .art_accessories .imgs .right {
     width: 2.57rem;
     height: 1.72rem;
 }
+.art_accessories .desr_text {
+    color:#333;
+    margin: .28rem 0 0;
+}
 .strict_acceptance {
     padding: .3rem .09rem .08rem;
     background: #eee;
+}
+.strict_acceptance .line {
+    margin: -.01rem 0 .13rem;
 }
 .art2 {
     width: 100%;
@@ -251,6 +278,14 @@
     padding: .68rem .09rem 0;
     margin-bottom: .4rem;
 }
+.free_after_sale .line {
+    margin: -.01rem 0 .05rem;
+}
 .wine_cabinet, .cigar_cellar, .art_accessories_box {
     padding: 0 .09rem;
+}
+.content .container {
+    font-size: .15rem;
+    line-height: .15rem;
+    margin: .3rem 0 .4rem;
 }
