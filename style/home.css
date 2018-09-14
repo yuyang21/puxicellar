@@ -55,7 +55,7 @@
   padding-top: .55rem;
 }
 .custom ul{
-  clear: both;
+  overflow: hidden;
   padding: 0 .09rem;
 }
 .custom ul li{
@@ -95,6 +95,33 @@
   color: #000000;
 }
 .part_title::after{
+  content: '';
+  width: .21rem;
+  height: .02rem;
+  background: #D70C19;
+  position: absolute;
+  bottom: 0;
+  left: 1.78rem;
+}
+.case .abstract{
+  margin-top: .4rem;
+  margin-bottom: .1rem;
+}
+.case .abstract p:first-child{
+  text-align: center;
+  font-size: .2rem;
+  color: #000000;
+  margin-bottom: .1rem;
+}
+.case .abstract p:last-child{
+  text-align: center;
+  font-size: .12rem;
+  color: #333333;
+  padding-bottom: .1rem;
+  position: relative;
+  margin-bottom: .3rem;
+}
+.case .abstract p:last-child::after{
   content: '';
   width: .21rem;
   height: .02rem;
