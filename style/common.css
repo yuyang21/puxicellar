@@ -53,6 +53,7 @@ html,body{
     background-color: #fff;
     margin: 0;
     font-family: Arial, "Microsoft YaHei", "微软雅黑";
+    -webkit-overflow-scrolling: auto;
 }
 ul, p {
     list-style: none;
