@@ -6,7 +6,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     text-decoration: none;
     border: none;
     font-weight: normal;
-    font-family: "Microsoft Yahei";
+    font-family: Arial, "Microsoft YaHei", "微软雅黑";
     box-sizing: border-box;
     font-size: .15rem;
     -webkit-tap-highlight-color:transparent;
@@ -52,7 +52,7 @@ html,body{
     width: 100%;
     background-color: #fff;
     margin: 0;
-    font-family: 'Microsoft YaHei';
+    font-family: Arial, "Microsoft YaHei", "微软雅黑";
 }
 ul, p {
     list-style: none;
@@ -246,23 +246,27 @@ li{
     line-height: .21rem;
     margin: .2rem auto .41rem;
 }
-.footer .section3 {
-    height: .45rem;
+.fixed .section3 {
+    height: .46rem;
     line-height: .45rem;
     background: #CB0F1B;
     text-align: center;
-    overflow: hidden;
+    position: fixed;
+    bottom: -.01rem;
+    width: 100%;
+    z-index: 99999;
 }
-.footer .section3 li a{
+.fixed .section3 li a{
     font-size: .12rem;
     color: #fff;
 }
-.footer .section3 li{
+.fixed .section3 li{
     display: inline-block;
-
 }
-.footer .section3 li.right a {
-    width: 1.68rem;
+.fixed .section3 li.right {
+    width: 44.8%;
+}
+.fixed .section3 li.right a {
     padding-left: .37rem;
     background: url(../images/footer/tel.png) no-repeat 0.1rem 0.1rem;
     background-size: 14.5%;
@@ -270,17 +274,17 @@ li{
     color: #fff;
     font-size: .12rem;
 }
-.footer .section3 .left {
-    width: 2.07rem;
+.fixed .section3 .left {
+    width: 55.2%;
     background: #000;
 }
-.footer .section3 .left li {
+.fixed .section3 .left li {
     width: 33.33%;
     float: left;
     height: .46rem;
     line-height: .47rem;
 }
-.footer .section3 .left li:nth-child(2) {
+.fixed .section3 .left li:nth-child(2) {
     border-left: 1px solid #666;
     border-right: 1px solid #666;
 }

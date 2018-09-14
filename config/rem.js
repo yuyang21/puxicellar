@@ -9,6 +9,7 @@
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvt, recalc, false);
     doc.addEventListener('DOMContentLoaded', recalc, false);
+    document.getElementByTagName('body')[0].addEventListener('touchstart', function(e) {e.preventDefault();}, false)
 })(document, window);
 
 $(function(){
