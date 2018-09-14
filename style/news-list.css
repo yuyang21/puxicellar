@@ -1,7 +1,9 @@
 #news-list {
   padding-top: .56rem;
 }
-
+.content {
+  display: none;
+}
 .header {
   width: 100%;
   height: 2.61rem;
