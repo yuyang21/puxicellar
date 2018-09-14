@@ -19,6 +19,58 @@
     <link rel="stylesheet" href="../plugins/swiper-4.3.5.min.css">
     <link rel="stylesheet" href="../style/news-list.css">
   </head>
+  <script>
+    $(function(){
+      var response = [{
+        imgUrl: '../images/home/news_img.png',
+        title: '匠心12年，时间是最好的承诺',
+        describe: '葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…',
+        time: '2018-01-23'
+      },
+      {
+        imgUrl: '../images/home/news_img.png',
+        title: '匠心12年，时间是最好的承诺',
+        describe: '葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…',
+        time: '2018-01-23'
+      },
+      {
+        imgUrl: '../images/home/news_img.png',
+        title: '匠心12年，时间是最好的承诺',
+        describe: '葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…',
+        time: '2018-01-23'
+      },
+      {
+        imgUrl: '../images/home/news_img.png',
+        title: '匠心12年，时间是最好的承诺',
+        describe: '葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…',
+        time: '2018-01-23'
+      },
+      {
+        imgUrl: '../images/home/news_img.png',
+        title: '匠心12年，时间是最好的承诺',
+        describe: '葡玺作为中国储酒行业的领军品牌，本次携最先进的设计理念，最古老的工艺，参加此次展会…',
+        time: '2018-01-23'
+      },]
+      $('.more_btn').click(function(){
+        for (var i = 0; i < response.length; i++){
+          var str = 
+          '<li>'
+            + '<a href="./new-detail.html">'
+              + '<img src="'+ response[i].imgUrl +'" alt="" class="newImg">'
+              + '<p class="abstract">'+ response[i].title +'</p>'
+              + '<p class="describe">'+ response[i].describe +'</p>'
+              + '<div class="dataTime">'
+                + '<img src="../images/home/clock.png" alt="" class="clock">'
+                + '<span>'+ response[i].time +'</span>'
+                + '<img src="../images/home/arrow.png" alt="" class="to_detail">'
+              + '</div>'
+            + '</a>'
+          + '</li>'
+          $(this).parent().find('ul').append(str)
+        }
+      })
+    });
+  </script>
   <body>
     <div class="navBar">
       <div >
@@ -197,5 +249,15 @@
       </div>
     </div>
     <embed type="text/html" src="../page/common/footer.html" class="footer"/>
+    <div class="fixed">
+      <ul class="section3">
+        <div class="left">
+          <li><a href="./us.html">我们</a></li>
+          <li><a href="./case.html">案例</a></li>
+          <li><a href="./service-after-sale.html">服务</a></li>
+        </div>
+        <li class="right"><a href="tel:400-117-1855">免费沟通，效率更高!</a></li>
+      </ul>
+    </div>
   </body>
 </html>
