@@ -145,7 +145,7 @@ li{
 }
 /*导航条*/
 .navBar{
-  /*height: .57rem;*/
+  height: .57rem;
   background: #191919;
   position: fixed;
   top: 0;

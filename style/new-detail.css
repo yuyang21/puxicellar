@@ -41,10 +41,10 @@
   text-align: justify;
 }
 .bottom_pagination{
-  border-top: .01rem solid #EEEEEE; 
+  border-top: .01rem solid #EEEEEE;
   padding: .16rem 0 .4rem 0;
 }
-.bottom_pagination span{ 
+.bottom_pagination span{
   display: inline-block;
   position: relative;
   line-height: .21rem;
@@ -78,7 +78,7 @@
   background: url(../images/nav/icon_grey.png);
   display: block;
   position: absolute;
-  top: .04em;
+  top: .04rem;
   left: 0;
   background-size: cover;
 }
