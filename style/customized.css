@@ -1,0 +1,291 @@
+#customized {
+    padding-top: .55rem;
+  }
+#customized .content {
+    display: none;
+}
+.header {
+    width: 100%;
+    height: 2.61rem;
+    background: url('../images/customized/customized.png') no-repeat center center;
+    background-size: 100%;
+}
+.line {
+    background: #D70C19;
+    width: .18rem;
+    height: .02rem;
+    margin: .1rem 0 .2rem;
+}
+.line.margin_b_8 {
+    margin-bottom: .08rem;
+}
+.desr_text {
+    font-size: .15rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: .26rem;
+    letter-spacing: -.15px;
+}
+.desr_text.margin_b_6 {
+    margin-bottom: .06rem;
+}
+.wine_cellar {
+    overflow: hidden;
+}
+.exclusive {
+    padding: 0 .09rem;
+}
+.exclusive .imgs {
+    background: url('../images/customized/wine.png') no-repeat 0rem 0;
+    background-size: 100%;
+    width: 100%;
+    height: 2.29rem;
+}
+.exclusive .imgs .right {
+    width: 43%;
+    padding-top: .6rem;
+}
+.exclusive .imgs .right p {
+    font-size: .15rem;
+    color: #666;
+    line-height: .15rem;
+    margin-bottom: .06rem;
+}
+.exclusive .imgs .right img {
+    display: block;
+}
+.exclusive .imgs .right img:nth-child(2) {
+    height:.08rem;
+    width: 99%;
+}
+.exclusive .imgs .right img:nth-child(3) {
+    margin-top: .25rem;
+    height: .45rem;
+}
+.exclusive .red_title {
+    font-size: .17rem;
+    line-height: .17rem;
+    color: #D70C19;
+    margin-top: .25rem;
+}
+.exclusive .grey3_title {
+    line-height: .16rem;
+    font-size: .16rem;
+    color: #333;
+    margin-top: .19rem;
+}
+.exclusive .line {
+    height: .021rem;
+}
+.space {
+    width: 100%;
+    background: #eee url('../images/customized/space_selection.png') no-repeat 0.15rem .2rem;
+    background-size: 93%;
+    padding: .41rem .09rem;
+}
+.space .ft_17, .space .ft_17 span {
+    font-size: .17rem;
+    line-height: .17rem;
+}
+.red_grey_title {
+    font-size: .2rem;
+    line-height: .2rem;
+    color: #333;
+}
+.red_grey_title span {
+    color: #D70C19;
+    font-size: .2rem;
+    line-height: .2rem;
+}
+.grey6_12_title {
+    font-size: .12rem;
+    line-height: .12rem;
+    color: #666;
+    padding: .1rem 0;
+}
+.space .tip {
+    font-size: .14rem;
+    line-height: .15rem;
+    color: #D70C19;
+    margin-top: -.1rem;
+}
+.solid_wood {
+    padding: .4rem .09rem .12rem;
+}
+.solid_wood .imgs {
+    overflow: hidden;
+    margin-bottom: .26rem;
+}
+.solid_wood .imgs .left {
+    width: 1.3rem;
+    height: 1.57rem;
+}
+.solid_wood .imgs .right {
+    width: 63%;
+    padding-left: .15rem;
+    padding-top: .05rem;    
+}
+.solid_wood .imgs .right .title_01 {
+    border-left:2px solid #D70C19;
+    padding-left:.08rem;
+    font-size: .2rem;
+}
+.solid_wood .imgs .right .title_01 span {
+    font-size: .2rem;
+}
+.solid_wood .imgs .right .text_01 {
+    font-size:14px;
+    line-height:1.9;
+    padding: .16rem 0 .1rem;
+    margin-bottom: 0;
+ }
+.temperature {
+    padding: .2rem 0.09rem .32rem;
+    width: 100%;
+    height: 100%;
+    background: url('../images/customized/temperature_bg.png') no-repeat 0 0;
+    background-size: 100%;
+    overflow: hidden;
+}
+.temperature .line_01 {
+    margin-bottom: .26rem;
+    background: #999;
+}
+.temperature .text_01 {
+    color:#666;
+    font-size: .14rem;
+    line-height: .14rem;
+    text-align:center;
+}
+.temperature .bg {
+    display: block;
+    width: 105%;
+    margin: .09rem 0 .07rem -.09rem;
+}
+.temperature .left, .temperature .right {
+    font-size: .14rem;
+    line-height: .15rem;
+    color: #666;
+    margin-top: -.6rem;
+}
+.functional_design {
+    padding: .4rem .09rem .3rem;
+}
+.functional_design .title_01 {
+    height:.09rem;
+    line-height: .09rem;
+    display: block;
+    margin-top: .1rem;
+}
+.functional_design .line_01 {
+    margin-bottom:.28rem;
+    background: #999;
+}
+.functional_design ul {
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: .15rem;
+}
+.functional_design ul li {
+    float: left;
+    width: 1.15rem;
+    height: .91rem;
+    position: relative;
+    margin-right: .06rem;
+    margin-bottom: .09rem;
+}
+.functional_design ul li img {
+    width: 100%;
+}
+.functional_design ul li p {
+    font-size: .14rem;
+    line-height: .15rem;
+    color: #fff;
+    position: absolute;
+    bottom: .21rem;
+    text-align: center;
+    width: 100%;
+}
+.ecological_reduction {
+    padding: .28rem .09rem .27rem;
+    width: 100%;
+    height: 2.51rem;
+    background: #eee url('../images/customized/ecologic.png') no-repeat 0.09rem 0.28rem;
+    background-size: 57%;
+}
+.ecological_reduction .title {
+    margin: .33rem 0 .13rem .56rem;
+}
+.ecological_reduction .title .line {
+    margin: -.01rem 0 .13rem;
+}
+.ecological_reduction .text {
+    margin: .11rem 0 .13rem .56rem;
+}
+.ecological_reduction .text .desr_text {
+    letter-spacing: -.01rem;
+    width: 3.1rem;
+}
+.art_accessories {
+    overflow: hidden;
+    padding: .31rem 0.09rem .37rem;
+}
+.art_accessories .imgs {
+    overflow: hidden;
+    position: relative;
+}
+.art_accessories .imgs .left {
+    padding: .32rem 0 0 .21rem;
+    background: #D70C19;
+    width: 1.79rem;
+    height: 1.23rem;
+    position: absolute;
+    color: #FFF;
+    top: .22rem;
+    z-index: 9;
+}
+.art_accessories .imgs .left p:first-child {
+    margin-bottom: .1rem;
+    font-size: .2rem;
+    line-height: .2rem;
+}
+.art_accessories .imgs .left p:first-child {
+    font-size: .12rem;
+    line-height: .12rem;
+}
+.art_accessories .imgs .right {
+    width: 2.57rem;
+    height: 1.72rem;
+}
+.art_accessories .desr_text {
+    color:#333;
+    margin: .28rem 0 0;
+}
+.strict_acceptance {
+    padding: .3rem .09rem .08rem;
+    background: #eee;
+}
+.strict_acceptance .line {
+    margin: -.01rem 0 .13rem;
+}
+.art2 {
+    width: 100%;
+    height: 2.06rem;
+    display: block;
+}
+.free_after_sale {
+    padding: .68rem .09rem 0;
+    margin-bottom: .4rem;
+}
+.free_after_sale .line {
+    margin: -.01rem 0 .05rem;
+}
+.wine_cabinet, .cigar_cellar, .art_accessories_box {
+    padding: 0 .09rem;
+}
+.content .container {
+    font-size: .15rem;
+    line-height: .15rem;
+    margin: .3rem 0 .4rem;
+}

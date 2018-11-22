@@ -1,37 +1,14 @@
 #case {
-  padding-top: .57rem;
+  padding-top: .55rem;
 }
-
+.content {
+  display: none;
+}
 .header {
   width: 100%;
   height: 2.61rem;
-  background: url('../images/case/success_case.png') no-repeat center center;
+  background: url('../images/case/success_case.png') no-repeat 0 0;
   background-size: 100%;
-}
-.tab_list {
-  padding: 0 .1rem;
-  overflow: hidden;
-  margin: .39rem auto .3rem;
-}
-.tab_list li {
-  width: 1.74rem;
-  height: .46rem;
-  line-height: .46rem;
-  color: #fff;
-  font-size: .15rem;
-  text-align: center;
-  background: #5A5A5A;
-  margin-bottom: .09rem;
-  font-weight: 100;
-}
-.tab_list li.active {
-  background: #D70C19;
-}
-.tab_list li:nth-child(odd) {
-  float: left;
-}
-.tab_list li:nth-child(even) {
-  float: right;
 }
 .list_box {
   padding: 0 .1rem;
@@ -61,19 +38,21 @@
   padding: .18rem .1rem .24rem;
 }
 .list_box li .bottom {
-  overflow: hidden;
   color: #666;
-  font-size: .14rem;
   height: .33rem;
 }
 .list_box li .bottom .left {
   position: relative;
-  top: -.03rem;
+  top: -.035rem;
+}
+.list_box li .bottom .left p {
+  font-size: .14rem;
 }
 .list_box li .bottom .right {
-  width: .76rem;
-  height: .27rem;
-  line-height: .278rem;
+  font-size: .14rem;
+  width: 1.06rem;
+  height: .29rem;
+  line-height: .3rem;
   text-align: center;
   border: 1px solid #333;
   padding-left: .28rem;

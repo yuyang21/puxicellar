@@ -6,7 +6,7 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     text-decoration: none;
     border: none;
     font-weight: normal;
-    font-family: "Microsoft Yahei";
+    font-family: Arial, "Microsoft YaHei", "微软雅黑";
     box-sizing: border-box;
     font-size: .15rem;
     -webkit-tap-highlight-color:transparent;
@@ -17,47 +17,52 @@ body, div, span, header, footer, nav, section, aside, article, ul, dl, dt, dd, l
     -webkit-margin-end: 0px;
 }
 
-/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/  
-::-webkit-scrollbar  
-{  
-    width: 0px;  
-    height: 0px;  
-    background-color: #fff;  
-}  
-  
-/*定义滚动条轨道 内阴影+圆角*/  
-::-webkit-scrollbar-track  
-{  
-    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);  
-    border-radius: 10px;  
-    background-color: #fff;  
-}  
-  
-/*定义滑块 内阴影+圆角*/  
-::-webkit-scrollbar-thumb  
-{  
-    border-radius: 10px;  
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
-    background-color: #555;  
-}  
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar
+{
+    width: 0px;
+    height: 0px;
+    background-color: #fff;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 1px rgba(0,0,0,0);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #555;
+}
 
 input[type="button"], input[type="submit"], input[type="search"], input[type="reset"] {
     -webkit-appearance: none;
 }
 
-textarea { -webkit-appearance: none;}   
+textarea { -webkit-appearance: none;}
 
 html,body{
     height: 100%;
     width: 100%;
     background-color: #fff;
     margin: 0;
-    font-family: 'Microsoft YaHei';
+    font-family: Arial, "Microsoft YaHei", "微软雅黑";
+    -webkit-overflow-scrolling: auto;
 }
 ul, p {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+img{
+  position: relative;
 }
 
 .clear:after{
@@ -73,6 +78,10 @@ ul, p {
 .back_img{
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+
+.text-image{
+    margin:.3rem 0 .4rem;
 }
 
 .margin{
@@ -136,6 +145,9 @@ li{
     list-style: none;
 }
 
+.text-center{
+  text-align: center;
+}
 /*导航条*/
 .navBar{
   height: .57rem;
@@ -158,12 +170,11 @@ li{
   float: right;
   margin: .2rem .25rem;
   display: block;
-  transition: .3s all ease;
 }
 .navBar ul{
   margin-top: .57rem;
   clear: both;
-  transition: .3s all linear;
+  transition: .2s all linear;
   overflow: hidden;
   height: 0;
 }
@@ -176,17 +187,22 @@ li{
   text-align: center;
   border-bottom: .01rem solid #353535;
 }
-.navBar ul li:last-child{
+.navBar ul li.last{
   border: none;
 }
 
+/* footer */
 .footer {
     color: #fff;
+    height: 6.58rem;
+    width: 100%;
+    display: block;
+    overflow: hidden;;
 }
 .footer .section1 {
     padding: .41rem 0 .4rem .1rem;
     background: #000;
-    height: 2.92rem;
+    height: 4.1rem;
 }
 .footer .section1 .city {
     font-size: .16rem;
@@ -235,31 +251,71 @@ li{
     line-height: .21rem;
     margin: .2rem auto .41rem;
 }
-.footer .section3 {
+.fixed .section3 {
     height: .46rem;
-    line-height: .46rem;
+    line-height: .45rem;
     background: #CB0F1B;
     text-align: center;
+    position: fixed;
+    bottom: -.01rem;
+    width: 100%;
+    z-index: 99999;
 }
-.footer .section3 li {
+.fixed .section3 li a{
+    font-size: .12rem;
+    color: #fff;
+}
+.fixed .section3 li{
     display: inline-block;
+}
+.fixed .section3 li.right {
+    width: 44.8%;
+}
+.fixed .section3 li.right a {
+    padding-left: .37rem;
+    background: url(../images/footer/tel.png) no-repeat 0.1rem 0.1rem;
+    background-size: 14.5%;
+    display: block;
+    color: #fff;
     font-size: .12rem;
 }
-.footer .section3 li.right {
-    width: 1.68rem;
-    padding-left: .37rem;
-    background: url('../images/footer/tel.png') no-repeat 0.1rem 0.1rem;
-    background-size: 14.5%;
-}
-.footer .section3 .left {
-    width: 2.07rem;
+.fixed .section3 .left {
+    width: 55.2%;
     background: #000;
 }
-.footer .section3 .left li {
+.fixed .section3 .left li {
     width: 33.33%;
     float: left;
+    height: .46rem;
+    line-height: .47rem;
 }
-.footer .section3 .left li:nth-child(2) {
+.fixed .section3 .left li:nth-child(2) {
     border-left: 1px solid #666;
     border-right: 1px solid #666;
+}
+
+/* 菜单切换 */
+.tab_list {
+    padding: 0 .1rem;
+    overflow: hidden;
+    margin: .39rem auto .3rem;
+}
+.tab_list li {
+    width: 49%;
+    height: .46rem;
+    line-height: .46rem;
+    color: #fff;
+    font-size: .15rem;
+    text-align: center;
+    background: #5A5A5A;
+    margin-bottom: .09rem;
+}
+.tab_list li.active {
+    background: #D70C19;
+}
+.tab_list li:nth-child(odd) {
+    float: left;
+}
+.tab_list li:nth-child(even) {
+    float: right;
 }
